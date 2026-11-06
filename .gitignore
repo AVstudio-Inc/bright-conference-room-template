@@ -1,0 +1,28 @@
+# Operating-system metadata
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Generated AVstudio output; may contain resolved deployment credentials
+AVstudio UI/build/
+*.ch5z
+*.ch5
+
+# Deployment environments (only neutral examples belong in Git)
+AVstudio UI/env/*.env
+!AVstudio UI/env/*.example.env
+.env
+.env.*
+!.env.example
+
+# Machine-local agent configuration
+.vscode/mcp.json
+.agents/mcp_config.json
+.codex/
+
+# Temporary files and logs
+*.log
+*.tmp
+*.swp
+*~

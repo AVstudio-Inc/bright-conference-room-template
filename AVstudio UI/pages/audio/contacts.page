@@ -1,0 +1,71 @@
+{
+    "uuid": "cee63609-467c-4428-9848-413d9d4dfc0a",
+    "name": "contacts",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "background": {
+        "color": "transparent"
+    },
+    "containers": [
+        {
+            "uuid": "19464482-0a74-4e11-a30a-f42b050e8d35",
+            "name": "Contacts",
+            "cssClass": "container",
+            "flow": "column",
+            "align": "stretch",
+            "distribution": "flex-start",
+            "showScrollbars": true,
+            "scrollbarSize": 5,
+            "scrollbarThumbBackground": "#c7c7c7",
+            "elements": [
+                {
+                    "uuid": "8762e549-899a-4d3e-b72c-16d0c3164261",
+                    "name": "Contact list",
+                    "type": "subpageList",
+                    "cssClass": "subpageList",
+                    "variant": "grid",
+                    "rows": 5,
+                    "columns": 1,
+                    "gridFlow": "row",
+                    "scrollMode": "scroll",
+                    "scrollbarThumbBackground": "#c7c7c7",
+                    "gap": {
+                        "value": 8,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "subpageName": "./contact-card.page",
+                    "attachedDatasource": {
+                        "datasource": "datasources/contacts.datasource",
+                        "steps": []
+                    },
+                    "inputParameters": {
+                        "contactName": "#datasources/contacts.datasource:*.name#",
+                        "phone": "#datasources/contacts.datasource:*.number#"
+                    },
+                    "listKey": "#datasources/contacts.datasource:*.id#"
+                }
+            ],
+            "hideScrollbars": false,
+            "scrollMode": "disabled",
+            "allowWrap": true
+        }
+    ],
+    "enableCustomPageSize": false
+}

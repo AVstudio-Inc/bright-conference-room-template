@@ -1,0 +1,258 @@
+{
+    "uuid": "5804ba62-9b43-413a-9e37-52e14fa716ad",
+    "name": "presentation",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "gap": {
+        "value": 0,
+        "unit": "px"
+    },
+    "paddingOptions": {
+        "paddingLeft": {
+            "value": null,
+            "unit": "px"
+        },
+        "paddingRight": {
+            "value": null,
+            "unit": "px"
+        },
+        "paddingTop": {
+            "value": 0,
+            "unit": "px"
+        },
+        "paddingBottom": {
+            "value": 0,
+            "unit": "px"
+        },
+        "padding": {
+            "value": 16,
+            "unit": "px"
+        }
+    },
+    "background": {
+        "color": ""
+    },
+    "containers": [
+        {
+            "uuid": "e2978c8b-0784-4379-8b60-c0c24003fe11",
+            "name": "Top",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "center",
+            "distribution": "space-between",
+            "size": {
+                "value": 13,
+                "unit": "%",
+                "manualMode": true
+            },
+            "gap": {
+                "unit": "px"
+            },
+            "background": {
+                "color": "#fafafa"
+            },
+            "border": {
+                "useBorder": true,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+                "borderBottomLeftRadius": 0,
+                "borderBottomRightRadius": 0,
+                "borderBottomWidth": 1,
+                "borderColor": "#b5b5b5",
+                "borderStyle": "solid"
+            },
+            "paddingOptions": {
+                "padding": {
+                    "unit": "px"
+                },
+                "paddingLeft": {
+                    "value": 16,
+                    "unit": "px"
+                },
+                "paddingRight": {
+                    "value": 16,
+                    "unit": "px"
+                }
+            },
+            "elements": [
+                {
+                    "uuid": "e2978c8b-0784-4379-8b60-c0c24003fe22",
+                    "type": "text",
+                    "name": "Page Title",
+                    "cssClass": "text",
+                    "text": "<p>Presentation</p>",
+                    "textColor": "#9a9a9a",
+                    "textFontSize": {
+                        "value": 26,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 40,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "unit": "px"
+                        }
+                    },
+                    "fontSize": {
+                        "value": 3,
+                        "unit": "vh"
+                    }
+                },
+                {
+                    "uuid": "e2978c8b-0784-4379-8b60-c0c24003fe23",
+                    "type": "dateTime",
+                    "name": "Current Date",
+                    "cssClass": "dateTimeElement presentation-date-time",
+                    "variant": "datetime",
+                    "datePosition": "before",
+                    "showDate": true,
+                    "showTime": true,
+                    "showSeconds": false,
+                    "useAmPm": true,
+                    "dateColor": "#1478ff",
+                    "dateFontSize": {
+                        "value": 25,
+                        "unit": "px"
+                    },
+                    "textColor": "#1478ff",
+                    "fontSize": {
+                        "value": 25,
+                        "unit": "px"
+                    },
+                    "fontFamily": "audiowide_regular_d0232764ae",
+                    "locale": "en-US",
+                    "timeZone": "America/New_York",
+                    "width": {
+                        "width": {
+                            "value": 40,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 45,
+                            "unit": "px"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "uuid": "20e9ea49-60d9-42e5-8118-ad7d414f6379",
+            "name": "Lower",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "stretch",
+            "gap": {
+                "value": 0,
+                "unit": "px"
+            },
+            "background": {
+                "color": "#fafafa"
+            },
+            "border": {
+                "useBorder": true,
+                "borderTopLeftRadius": 0,
+                "borderTopRightRadius": 0,
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderColor": "#ffffff"
+            },
+            "paddingOptions": {
+                "padding": {
+                    "unit": "px"
+                }
+            },
+            "elements": [
+                {
+                    "uuid": "e2978c8b-0784-4379-8b60-c0c24003fe29",
+                    "type": "subpage",
+                    "name": "Source Subpage",
+                    "cssClass": "subpage",
+                    "subpageName": "./source.page",
+                    "width": {
+                        "width": {
+                            "value": 74.8,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    }
+                },
+                {
+                    "uuid": "e2978c8b-0784-4379-8b60-c0c24003fe27",
+                    "type": "spacer",
+                    "name": "Content Divider",
+                    "cssClass": "spacerElement",
+                    "background": {
+                        "color": "#b5b5b5"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 1,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    }
+                },
+                {
+                    "uuid": "e2978c8b-0784-4379-8b60-c0c24003fe30",
+                    "type": "subpage",
+                    "name": "Destinations Subpage",
+                    "cssClass": "subpage",
+                    "subpageName": "./destinations.page",
+                    "width": {
+                        "width": {
+                            "value": 25,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "left": "930px",
+                    "border": {
+                        "useBorder": true,
+                        "borderColor": "#b5b5b5",
+                        "borderLeftWidth": 1
+                    }
+                }
+            ],
+            "allowWrap": true,
+            "scrollMode": "disabled"
+        }
+    ]
+}

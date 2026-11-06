@@ -1,0 +1,189 @@
+{
+    "uuid": "1eaea64a-6bed-445f-97d5-d2d340411ff2",
+    "name": "global-header",
+    "layout": "responsive",
+    "cssClass": "page",
+    "containers": [
+        {
+            "uuid": "b694192b-22c4-443f-99ef-83b6572c750a",
+            "name": "Global header controls",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "center",
+            "distribution": "space-between",
+            "size": {
+                "value": 100,
+                "unit": "%"
+            },
+            "paddingOptions": {
+                "paddingLeft": {
+                    "value": 24,
+                    "unit": "px"
+                },
+                "paddingRight": {
+                    "value": 24,
+                    "unit": "px"
+                },
+                "paddingTop": {
+                    "unit": "px"
+                },
+                "paddingBottom": {
+                    "unit": "px"
+                }
+            },
+            "elements": [
+                {
+                    "uuid": "dc69da89-21ca-42c2-9afe-2395730c4cd9",
+                    "type": "button",
+                    "name": "Settings",
+                    "cssClass": "button",
+                    "text": "",
+                    "iconName": "FaCog",
+                    "iconSize": {
+                        "value": 31,
+                        "unit": "px"
+                    },
+                    "iconColor": "#4d4d4d",
+                    "width": {
+                        "width": {
+                            "value": 64,
+                            "unit": "px"
+                        },
+                        "minWidth": {
+                            "value": 64,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 64,
+                            "unit": "px"
+                        }
+                    },
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderWidth": 0,
+                        "borderRadius": 0,
+                        "borderColor": "transparent",
+                        "borderStyle": "solid"
+                    },
+                    "actions": [
+                        {
+                            "uuid": "f8fc2e46-3961-4932-a669-afcc812c514f",
+                            "name": "Open Settings",
+                            "behaviour": "onPress",
+                            "type": "r",
+                            "pageFlipTarget": "pages/settings.page"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "eb4a0f9d-d8e6-452c-9526-586539d9782a",
+                    "type": "text",
+                    "name": "Room title",
+                    "cssClass": "text",
+                    "text": "<p style=\"text-align: center;\">$roomDisplayName$</p>",
+                    "textColor": "#4d4d4d",
+                    "textFontSize": {
+                        "value": 18,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 60,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 48,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    }
+                },
+                {
+                    "uuid": "40187b11-9b5f-401e-90b5-c9eaa60c1159",
+                    "type": "button",
+                    "name": "Help",
+                    "cssClass": "button",
+                    "text": "",
+                    "iconName": "FaQuestionCircle",
+                    "iconSize": {
+                        "value": 29,
+                        "unit": "px"
+                    },
+                    "iconColor": "#4d4d4d",
+                    "width": {
+                        "width": {
+                            "value": 64,
+                            "unit": "px"
+                        },
+                        "minWidth": {
+                            "value": 64,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 64,
+                            "unit": "px"
+                        }
+                    },
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderWidth": 0,
+                        "borderRadius": 0,
+                        "borderColor": "transparent",
+                        "borderStyle": "solid"
+                    },
+                    "actions": [
+                        {
+                            "uuid": "1341940e-0c3c-4d84-8744-fd58d6ab19ef",
+                            "name": "Open Help",
+                            "behaviour": "onPress",
+                            "type": "r",
+                            "pageFlipTarget": "pages/help.page"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "background": {
+        "color": ""
+    },
+    "enableCustomPageSize": true,
+    "width": {
+        "width": {
+            "value": 100,
+            "unit": "%"
+        }
+    },
+    "height": {
+        "height": {
+            "value": 64,
+            "unit": "px"
+        }
+    }
+}

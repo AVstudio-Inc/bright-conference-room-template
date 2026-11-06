@@ -1,0 +1,124 @@
+{
+    "uuid": "a5b881b1-4d4f-4e9f-8b51-96f5ef2f7742",
+    "name": "source",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "gap": {
+        "value": 0,
+        "unit": "px"
+    },
+    "background": {
+        "color": "transparent"
+    },
+    "containers": [
+        {
+            "uuid": "d3c8a0a1-2a55-4e2f-91d1-000000000002",
+            "name": "Source Heading Row",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "center",
+            "distribution": "center",
+            "size": {
+                "value": 40,
+                "unit": "px",
+                "manualMode": true
+            },
+            "elements": [
+                {
+                    "uuid": "d3c8a0a1-2a55-4e2f-91d1-000000000003",
+                    "type": "text",
+                    "name": "Source Heading",
+                    "cssClass": "text",
+                    "text": "<p style=\"text-align: center;\">SELECT SOURCE</p>",
+                    "textColor": "#474747",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 60,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "unit": "%"
+                        }
+                    },
+                    "style": {
+                        "textAlign": "center",
+                        "display": "flex",
+                        "alignItems": "center",
+                        "justifyContent": "center"
+                    }
+                }
+            ]
+        },
+        {
+            "uuid": "8b692429-c73c-45da-83d2-83cf5166826b",
+            "name": "Sources",
+            "cssClass": "container",
+            "flow": "column",
+            "align": "stretch",
+            "distribution": "center",
+            "elements": [
+                {
+                    "uuid": "ce933cf8-3f12-4c99-a62d-626605ac5818",
+                    "type": "subpageList",
+                    "name": "Sources",
+                    "cssClass": "subpageList",
+                    "subpageName": "pages/components/source-card.page",
+                    "variant": "grid",
+                    "rows": 3,
+                    "columns": 3,
+                    "gridFlow": "row",
+                    "scrollMode": "scroll",
+                    "gap": {
+                        "value": 12,
+                        "unit": "px"
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "attachedDatasource": {
+                        "datasource": "datasources/sources.datasource",
+                        "steps": []
+                    },
+                    "listKey": "#datasources/sources.datasource:*.id#",
+                    "activeSelectedListKey": "$presentationSource$",
+                    "inputParameters": {
+                        "label": "#datasources/sources.datasource:*.label#",
+                        "icon": "#datasources/sources.datasource:*.icon#",
+                        "selectionVariable": "presentationSource",
+                        "iconPixels": 66,
+                        "textPixels": 18,
+                        "cardWidth": 66,
+                        "cardHeight": 80,
+                        "sourceJoin": "100",
+                        "sourceValue": "#datasources/sources.datasource:*.joinValue#"
+                    }
+                }
+            ],
+            "scrollMode": "disabled",
+            "allowWrap": true
+        }
+    ]
+}

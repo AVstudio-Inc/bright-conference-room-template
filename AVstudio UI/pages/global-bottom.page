@@ -1,0 +1,473 @@
+{
+    "uuid": "a52e93b0-f6c9-4ee0-ab94-2485d2006d77",
+    "name": "global-bottom",
+    "layout": "responsive",
+    "cssClass": "page global-bottom-page",
+    "containers": [
+        {
+            "uuid": "26d3e0e4-731c-488c-96fc-71a98027704c",
+            "name": "Global controls",
+            "cssClass": "container global-control-rail",
+            "flow": "row",
+            "align": "center",
+            "distribution": "flex-start",
+            "gap": {
+                "value": 12,
+                "unit": "px",
+                "uuid": "cc6fcddd-bce5-4c4f-8dff-4700fd76c410"
+            },
+            "size": {
+                "value": 88,
+                "unit": "px",
+                "uuid": "5a15f324-712c-48cb-8a8d-00a4f01624e1",
+                "manualMode": true
+            },
+            "paddingOptions": {
+                "paddingLeft": {
+                    "unit": "px",
+                    "uuid": "be28c860-90f6-4922-8b37-3f5c4406cf43"
+                },
+                "paddingRight": {
+                    "unit": "px",
+                    "uuid": "e90a8dcd-c48b-45c4-88d7-0d00e91bf4c6"
+                },
+                "paddingTop": {
+                    "unit": "px",
+                    "uuid": "4d2edee9-7d4f-43fb-9208-dc2296097329"
+                },
+                "paddingBottom": {
+                    "unit": "px",
+                    "uuid": "3c5e33fb-3bdd-4355-bfb1-ed4a19534e5e"
+                },
+                "uuid": "8d16afb4-1838-4b3b-9c55-a6f7632e0d19"
+            },
+            "elements": [
+                {
+                    "uuid": "242db39b-2d6e-4853-9ddf-0fdfef3be0ea",
+                    "type": "button",
+                    "name": "Button_1",
+                    "cssClass": "button global-rail-button",
+                    "text": "",
+                    "iconName": "FaHome",
+                    "iconSize": {
+                        "value": 25,
+                        "unit": "px",
+                        "uuid": "50cb6010-5606-46a8-bd09-f9105935f133"
+                    },
+                    "iconColor": "#4d4d4d",
+                    "width": {
+                        "width": {
+                            "unit": "px",
+                            "uuid": "0fcfca30-9402-4f9a-980e-1ec00e59c44a",
+                            "value": 80
+                        },
+                        "minWidth": {
+                            "value": 80,
+                            "unit": "px",
+                            "uuid": "ba1d3bc7-6521-479f-8f99-f3405be0e71e"
+                        },
+                        "uuid": "e5717ee6-db46-48cc-ad4b-bff2ea1b996b"
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%",
+                            "uuid": "7f59f37c-bcac-40bf-aa45-006bada6696f"
+                        },
+                        "uuid": "aee2d0d7-5882-4580-b4fc-75d505bc06ab"
+                    },
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px",
+                            "uuid": "9d7a8c3f-3c06-4241-b46a-0c429b45b52c"
+                        },
+                        "uuid": "1416cde8-b9bc-48ac-8ca4-9eafbe3910db"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderWidth": 0,
+                        "borderRadius": 14,
+                        "borderColor": "transparent",
+                        "borderStyle": "solid",
+                        "uuid": "7d05fad1-4c5e-42e6-ba8a-1952ac767f6c"
+                    },
+                    "boxShadow": {
+                        "isEnabled": true,
+                        "xOffset": 0,
+                        "yOffset": 3,
+                        "blur": 10,
+                        "spread": 0,
+                        "color": "rgba(0,0,0,0.06)",
+                        "inset": false,
+                        "uuid": "8e10ac93-b497-41db-b36d-d20a20ee33eb"
+                    },
+                    "actions": [
+                        {
+                            "uuid": "9d6507f0-e963-4af9-8415-086ebc4c2f61",
+                            "name": "Go home",
+                            "behaviour": "onPress",
+                            "type": "r",
+                            "pageFlipTarget": "/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "uuid": "4eba874a-3340-49ab-8320-e2503a5de07a",
+            "name": "Container",
+            "elements": [
+                {
+                    "uuid": "a70990d4-930c-47b1-be50-a2162f29e6f7",
+                    "type": "button",
+                    "name": "Speaker mute",
+                    "cssClass": "button",
+                    "text": "",
+                    "iconName": "FaVolumeUp",
+                    "iconSize": {
+                        "value": 24,
+                        "unit": "px",
+                        "uuid": "feb582df-0dd9-499a-a4a9-652a2e5b5d0c"
+                    },
+                    "iconColor": "#4d4d4d",
+                    "width": {
+                        "width": {
+                            "unit": "px",
+                            "uuid": "3e11a66f-2bc1-4169-8e8b-4a5a14b9d782",
+                            "value": 80
+                        },
+                        "minWidth": {
+                            "value": 80,
+                            "unit": "px",
+                            "uuid": "47d6baef-bc90-4682-a208-5b3c22064659"
+                        },
+                        "uuid": "5a5dfc43-253e-408e-ae92-ddd500045105"
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%",
+                            "uuid": "75faa049-ff2e-42b5-a7f3-9e478c3c954c"
+                        },
+                        "uuid": "02058e88-b9a2-4ff2-8750-8321a818d6da"
+                    },
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px",
+                            "uuid": "025e582d-c221-4095-8db7-28bd1901e7d9"
+                        },
+                        "uuid": "be5b13d1-96b4-448e-b87c-d3639c141b17"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderWidth": 0,
+                        "borderRadius": 14,
+                        "borderColor": "transparent",
+                        "borderStyle": "solid",
+                        "uuid": "4ebdfbc2-be4b-42e8-88dd-81e974c10d3a"
+                    },
+                    "boxShadow": {
+                        "isEnabled": true,
+                        "xOffset": 0,
+                        "yOffset": 3,
+                        "blur": 10,
+                        "spread": 0,
+                        "color": "rgba(0,0,0,0.06)",
+                        "inset": false,
+                        "uuid": "72ad9848-902a-4ba9-80bb-a535c5af071c"
+                    },
+                    "modes": [
+                        {
+                            "name": "Muted",
+                            "isModeHasOwnActions": false,
+                            "modeProps": {
+                                "background": {
+                                    "color": "#dc001b",
+                                    "uuid": "e9772eb4-498d-4925-9382-f63a44025cbf"
+                                },
+                                "uuid": "a93057ac-ffdf-4d4a-86f6-237062961410",
+                                "iconName": "FaVolumeMute",
+                                "iconColor": "#ffffff"
+                            },
+                            "uuid": "e8d0211f-a071-4eaf-9ae5-c425f1bedf68"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "name": "Push Digital (momentarily)",
+                            "behaviour": "onPress",
+                            "signalName_signal": "303",
+                            "digitalPushData": "momentarily",
+                            "type": "d",
+                            "uuid": "10cb166f-d36b-4d07-be4a-13dca77a3245"
+                        }
+                    ],
+                    "activeModeIndex": "$volumeMute$"
+                },
+                {
+                    "uuid": "f181a0aa-2121-40d6-87d6-3ab8a2029206",
+                    "type": "subpage",
+                    "name": "Live volume control",
+                    "cssClass": "subpage",
+                    "subpageName": "pages/components/volume-control.page",
+                    "inputParameters": {
+                        "volumeValue": "$volumeLevel$"
+                    },
+                    "width": {
+                        "width": {
+                            "unit": "px",
+                            "uuid": "a138e7f7-9749-4ebd-b6db-5dfb9cb4119a",
+                            "value": 212
+                        },
+                        "minWidth": {
+                            "value": 176,
+                            "unit": "px",
+                            "uuid": "177dca33-0ade-42a5-a02d-19772efd9306"
+                        },
+                        "uuid": "03593fb8-e994-4928-a0fb-f1419c07c948"
+                    },
+                    "height": {
+                        "height": {
+                            "unit": "%",
+                            "uuid": "ed54285a-45ac-47be-b9c5-0e7a5e4802a5",
+                            "value": 100
+                        },
+                        "uuid": "db097621-f44e-4350-8188-c756a3c3d600"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderWidth": 0,
+                        "borderRadius": 14,
+                        "borderColor": "transparent",
+                        "borderStyle": "solid",
+                        "uuid": "c09f5ad6-2771-4948-a66d-9ad6e784f286"
+                    },
+                    "boxShadow": {
+                        "isEnabled": true,
+                        "xOffset": 0,
+                        "yOffset": 3,
+                        "blur": 10,
+                        "spread": 0,
+                        "color": "rgba(0,0,0,0.06)",
+                        "inset": false,
+                        "uuid": "eac15a9b-78ec-4d79-8754-cda51a65d407"
+                    }
+                },
+                {
+                    "uuid": "7f057519-0f16-4178-a6ad-6cc799d419d1",
+                    "type": "button",
+                    "name": "Microphone mute",
+                    "cssClass": "button global-rail-button",
+                    "text": "",
+                    "iconName": "FaMicrophone",
+                    "iconSize": {
+                        "value": 23,
+                        "unit": "px",
+                        "uuid": "eb6f7969-ad44-4c09-9140-c53d108c6d5d"
+                    },
+                    "iconColor": "#4d4d4d",
+                    "width": {
+                        "width": {
+                            "value": 80,
+                            "unit": "px",
+                            "uuid": "e5dee76a-ea9f-4766-96c7-1ecda4eb9fd5"
+                        },
+                        "minWidth": {
+                            "value": 80,
+                            "unit": "px",
+                            "uuid": "587ae795-be2d-45f6-901e-72de454c9470"
+                        },
+                        "uuid": "a0b25e5d-a218-47cf-a62d-ea687ec7ab50"
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%",
+                            "uuid": "967d519d-3bc3-499e-bb74-7d8c6da52ec5"
+                        },
+                        "uuid": "ff5a5282-fed9-46b5-92cd-b56b43f86a24"
+                    },
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px",
+                            "uuid": "0d1486de-79a4-4ee4-8039-94810884c370"
+                        },
+                        "uuid": "85e0466b-2a5b-4410-9a4c-78e5a18bcee7"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderWidth": 0,
+                        "borderRadius": 14,
+                        "borderColor": "transparent",
+                        "borderStyle": "solid",
+                        "uuid": "9e3fab5b-b56d-4ed8-a2e4-1cd5b07e27b9"
+                    },
+                    "boxShadow": {
+                        "isEnabled": true,
+                        "xOffset": 0,
+                        "yOffset": 3,
+                        "blur": 10,
+                        "spread": 0,
+                        "color": "rgba(0,0,0,0.06)",
+                        "inset": false,
+                        "uuid": "b10b1663-1ba4-4df8-be47-232c707c4a0f"
+                    },
+                    "actions": [
+                        {
+                            "name": "Push Digital (momentarily)",
+                            "behaviour": "onPress",
+                            "signalName_signal": "306",
+                            "digitalPushData": "momentarily",
+                            "type": "d",
+                            "uuid": "ef1e0746-c256-4b5f-be4c-000f5f265943"
+                        }
+                    ],
+                    "modes": [
+                        {
+                            "name": "Muted",
+                            "isModeHasOwnActions": false,
+                            "modeProps": {
+                                "background": {
+                                    "color": "#dc001b",
+                                    "uuid": "ba8832e3-094a-48ef-b889-4287f1c8a77b"
+                                },
+                                "uuid": "31e1f5fb-e60b-4f25-bd92-a5eac0dac7dc",
+                                "iconName": "FaMicrophoneSlash",
+                                "iconColor": "#ffffff"
+                            },
+                            "uuid": "c3016dd3-bc4f-4c49-829f-fff663016b75"
+                        }
+                    ],
+                    "activeModeIndex": "$microphoneMute$"
+                }
+            ],
+            "cssClass": "container",
+            "flow": "row"
+        },
+        {
+            "uuid": "e52d9e98-1351-42ff-ac10-8f953aa16d92",
+            "name": "Container",
+            "elements": [
+                {
+                    "uuid": "d99b7b74-98bd-4c02-ab0b-2252c687d186",
+                    "type": "button",
+                    "name": "System shutdown",
+                    "cssClass": "button global-rail-button",
+                    "text": "",
+                    "iconName": "FaPowerOff",
+                    "iconSize": {
+                        "value": 25,
+                        "unit": "px",
+                        "uuid": "2e387905-615a-471a-956a-6c04f6ee6e5a"
+                    },
+                    "iconColor": "#4d4d4d",
+                    "width": {
+                        "width": {
+                            "value": 80,
+                            "unit": "px",
+                            "uuid": "7d9440d9-9b2a-4ff0-83e7-11b9ec22f881"
+                        },
+                        "minWidth": {
+                            "value": 80,
+                            "unit": "px",
+                            "uuid": "2dd6c73e-9edc-4fb8-8a56-0f52af77b611"
+                        },
+                        "uuid": "b5b3f0e7-3964-4c78-aa15-e5cc30908f88"
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%",
+                            "uuid": "ac409522-a82c-46bd-a5d0-f58428f52b31"
+                        },
+                        "uuid": "392d37bd-7129-4a25-96c8-d07e06c19151"
+                    },
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px",
+                            "uuid": "b16c3bdc-d4e8-4667-bb05-0d476f055aa7"
+                        },
+                        "uuid": "5550983d-2de5-43be-a93c-d65cc00aebea"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderWidth": 0,
+                        "borderRadius": 14,
+                        "borderColor": "transparent",
+                        "borderStyle": "solid",
+                        "uuid": "e494ffb9-8cfd-4ce1-a4bb-48024a439464"
+                    },
+                    "boxShadow": {
+                        "isEnabled": true,
+                        "xOffset": 0,
+                        "yOffset": 3,
+                        "blur": 10,
+                        "spread": 0,
+                        "color": "rgba(0,0,0,0.06)",
+                        "inset": false,
+                        "uuid": "9579c282-5bbe-42ce-8a32-e699e48eda61"
+                    },
+                    "actions": [
+                        {
+                            "uuid": "8703f337-543f-426d-85a6-75ee0fd1b64f",
+                            "name": "Confirm shutdown",
+                            "type": "o",
+                            "behaviour": "onClick",
+                            "overlayAttachedSubpage": "pages/components/shutdown-confirmation.page",
+                            "overlayPlacement": "fullscreen",
+                            "showMask": true,
+                            "showCloseButton": true,
+                            "outsideClose": true,
+                            "useOverlayTimer": false,
+                            "anyClickClose": false
+                        }
+                    ],
+                    "activeModeIndex": "$systemPower$",
+                    "modes": [
+                        {
+                            "name": "System on",
+                            "isModeHasOwnActions": false,
+                            "modeProps": {
+                                "iconColor": "#1478ff"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "cssClass": "container",
+            "size": {
+                "manualMode": true,
+                "value": 88,
+                "unit": "px"
+            }
+        }
+    ],
+    "background": {
+        "color": "",
+        "uuid": "f3928e03-e805-49fc-97f7-2f5930a6c153"
+    },
+    "enableCustomPageSize": true,
+    "paddingOptions": {
+        "padding": {
+            "value": 16,
+            "unit": "px"
+        }
+    },
+    "width": {
+        "width": {
+            "value": 100,
+            "unit": "%"
+        }
+    },
+    "height": {
+        "height": {
+            "value": 116,
+            "unit": "px"
+        }
+    },
+    "flow": "row"
+}

@@ -1,0 +1,195 @@
+{
+    "uuid": "a7ea686a-1cb3-4ebd-9eb3-e7c8d578e707",
+    "name": "video",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "gap": {
+        "value": 0,
+        "unit": "px"
+    },
+    "paddingOptions": {
+        "paddingLeft": {
+            "value": null,
+            "unit": "px"
+        },
+        "paddingRight": {
+            "value": null,
+            "unit": "px"
+        },
+        "paddingTop": {
+            "value": 0,
+            "unit": "px"
+        },
+        "paddingBottom": {
+            "value": 0,
+            "unit": "px"
+        },
+        "padding": {
+            "value": 16,
+            "unit": "px"
+        }
+    },
+    "background": {
+        "color": ""
+    },
+    "containers": [
+        {
+            "uuid": "592d9f17-e619-45fe-b0ac-1753d512a688",
+            "name": "Video Header",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "center",
+            "distribution": "space-between",
+            "size": {
+                "value": 13,
+                "unit": "%",
+                "manualMode": true
+            },
+            "gap": {
+                "unit": "px"
+            },
+            "background": {
+                "color": "#fafafa"
+            },
+            "border": {
+                "useBorder": true,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+                "borderBottomLeftRadius": 0,
+                "borderBottomRightRadius": 0,
+                "borderBottomWidth": 1,
+                "borderColor": "#b5b5b5",
+                "borderStyle": "solid"
+            },
+            "paddingOptions": {
+                "padding": {
+                    "unit": "px"
+                },
+                "paddingLeft": {
+                    "value": 16,
+                    "unit": "px"
+                },
+                "paddingRight": {
+                    "value": 16,
+                    "unit": "px"
+                }
+            },
+            "elements": [
+                {
+                    "uuid": "cb96cf0a-a295-4b2d-8be4-f8e41e037698",
+                    "type": "text",
+                    "name": "Video Conference Title",
+                    "cssClass": "text",
+                    "text": "<p>Video Conference</p>",
+                    "textColor": "#9a9a9a",
+                    "textFontSize": {
+                        "value": 26,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 40,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "unit": "px"
+                        }
+                    },
+                    "fontSize": {
+                        "unit": "vh",
+                        "value": 3
+                    }
+                },
+                {
+                    "uuid": "d297afdf-f58a-42bd-8ad6-eb22ba2ac951",
+                    "type": "dateTime",
+                    "name": "Video Date Time",
+                    "cssClass": "dateTimeElement presentation-date-time",
+                    "variant": "datetime",
+                    "datePosition": "before",
+                    "showDate": true,
+                    "showTime": true,
+                    "showSeconds": false,
+                    "useAmPm": true,
+                    "dateColor": "#1478ff",
+                    "dateFontSize": {
+                        "value": 25,
+                        "unit": "px"
+                    },
+                    "textColor": "#1478ff",
+                    "fontSize": {
+                        "value": 25,
+                        "unit": "px"
+                    },
+                    "fontFamily": "audiowide_regular_d0232764ae",
+                    "locale": "en-US",
+                    "timeZone": "America/New_York",
+                    "width": {
+                        "width": {
+                            "value": 40,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 45,
+                            "unit": "px"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "uuid": "08a56dd7-c978-475e-93fc-298167988a15",
+            "name": "Video Content",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "stretch",
+            "gap": {
+                "value": 0,
+                "unit": "px"
+            },
+            "background": {
+                "color": "#fafafa"
+            },
+            "border": {
+                "useBorder": true,
+                "borderTopLeftRadius": 0,
+                "borderTopRightRadius": 0,
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderColor": "#ffffff"
+            },
+            "paddingOptions": {
+                "padding": {
+                    "value": 0,
+                    "unit": "px"
+                }
+            },
+            "elements": [
+                {
+                    "uuid": "fd9de008-b5f1-4986-b824-2d427ad710d6",
+                    "type": "subpage",
+                    "name": "Camera Controls Subpage",
+                    "cssClass": "subpage",
+                    "subpageName": "./camera-controls.page",
+                    "width": {
+                        "width": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

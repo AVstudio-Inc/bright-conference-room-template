@@ -1,0 +1,178 @@
+{
+    "uuid": "a7acc72b-1f9c-4ca3-90ff-e95683385e55",
+    "name": "help",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "gap": {
+        "value": 0,
+        "unit": "px"
+    },
+    "paddingOptions": {
+        "padding": {
+            "value": 16,
+            "unit": "px"
+        }
+    },
+    "background": {
+        "color": "transparent"
+    },
+    "containers": [
+        {
+            "uuid": "e0f033a4-9383-4691-87f1-d97dbd059ce5",
+            "name": "Help Header",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "center",
+            "distribution": "space-between",
+            "size": {
+                "value": 13,
+                "unit": "%",
+                "manualMode": true
+            },
+            "gap": {
+                "unit": "px"
+            },
+            "background": {
+                "color": "#fafafa"
+            },
+            "border": {
+                "useBorder": true,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+                "borderBottomLeftRadius": 0,
+                "borderBottomRightRadius": 0,
+                "borderBottomWidth": 1,
+                "borderColor": "#b5b5b5",
+                "borderStyle": "solid"
+            },
+            "paddingOptions": {
+                "padding": {
+                    "unit": "px"
+                },
+                "paddingLeft": {
+                    "value": 16,
+                    "unit": "px"
+                },
+                "paddingRight": {
+                    "value": 16,
+                    "unit": "px"
+                }
+            },
+            "elements": [
+                {
+                    "uuid": "0fc4d65f-7c0b-4364-b4f6-d73ac3c117c7",
+                    "type": "text",
+                    "name": "Help Title",
+                    "cssClass": "text",
+                    "text": "<p>Help</p>",
+                    "textColor": "#9a9a9a",
+                    "textFontSize": {
+                        "value": 26,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 40,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "unit": "px"
+                        }
+                    },
+                    "fontSize": {
+                        "value": 3,
+                        "unit": "vh"
+                    }
+                },
+                {
+                    "uuid": "f749f3b3-69f1-4b5d-b41e-d90ae9ca54ac",
+                    "type": "dateTime",
+                    "name": "Help Date Time",
+                    "cssClass": "dateTimeElement presentation-date-time",
+                    "variant": "datetime",
+                    "datePosition": "before",
+                    "showDate": true,
+                    "showTime": true,
+                    "showSeconds": false,
+                    "useAmPm": true,
+                    "dateColor": "#1478ff",
+                    "dateFontSize": {
+                        "value": 25,
+                        "unit": "px"
+                    },
+                    "textColor": "#1478ff",
+                    "fontSize": {
+                        "value": 25,
+                        "unit": "px"
+                    },
+                    "fontFamily": "audiowide_regular_d0232764ae",
+                    "locale": "en-US",
+                    "timeZone": "America/New_York",
+                    "width": {
+                        "width": {
+                            "value": 40,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 45,
+                            "unit": "px"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "uuid": "61ef68ac-83a0-4ad7-8d0b-fd7548626693",
+            "name": "Help Content",
+            "cssClass": "container",
+            "flow": "column",
+            "align": "stretch",
+            "distribution": "flex-start",
+            "background": {
+                "color": "#fafafa"
+            },
+            "border": {
+                "useBorder": true,
+                "borderTopLeftRadius": 0,
+                "borderTopRightRadius": 0,
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderColor": "#ffffff",
+                "borderStyle": "solid"
+            },
+            "elements": [
+                {
+                    "uuid": "dd2aaeff-cabc-40f0-8f59-7606d2afed23",
+                    "type": "text",
+                    "name": "Room operating guide",
+                    "cssClass": "text",
+                    "text": "<h2>Bright Conference Room — Quick guide</h2>\n<h3>Presentation</h3><p>Select one or more displays on the right. A blue frame marks the selected displays. Choose a source on the left to send it to every selected display. Each display previews the selected source icon and name until controller feedback updates it; unselected displays keep their assignments. Click a selected display again to deselect it. The power switch requests display power.</p>\n<h3>Audio calls</h3><p>Choose a contact to copy its number, or enter a number using the keypad or the input field. The contact list scrolls. Press the green phone button to send the complete number and request dialing. The red phone button requests hangup and clears the number field. The pause button requests call hold. Contacts in this template use demonstration numbers; replace them before operational use.</p>\n<h3>Camera control</h3><p>Select a camera, then use the directional pad and zoom buttons. Hold a direction or zoom button to keep moving; release it to stop. The centre button requests the camera home position. Select a preset to recall it on the current camera. Changing cameras clears the local preset selection.</p>\n<h3>Volume and mute</h3><p>Hold Volume − or Volume + to adjust the room level. The percentage follows feedback from the control system. Speaker and microphone mute buttons turn red and show a white crossed-out icon when the processor reports mute.</p>\n<h3>Ending the session</h3><p>Use Home to return to the activity screen. The power button opens a 10-second countdown. Choose End session to end immediately, or wait for the countdown to finish. Cancel, close the window or tap outside it to stop the countdown.</p>\n<h3>If a control does not respond</h3><p>Local selection remains visible while commands are sent. Physical operation requires the Crestron program to implement the project join map and return feedback. A selected card alone does not confirm that equipment switched. If volume or mute does not update, ask your room support team to check the processor connection and feedback.</p><h3>Settings</h3><p>Open the gear icon to edit the displayed room name, adjust room audio, switch display power and review the current room state. The room name is stored for the current session and resets when the interface reloads.</p>",
+                    "textColor": "#4d4d4d",
+                    "textFontSize": {
+                        "value": 18,
+                        "unit": "px"
+                    },
+                    "allowTextWrap": true,
+                    "width": {
+                        "width": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    }
+                }
+            ],
+            "scrollMode": "scroll",
+            "paddingOptions": {
+                "padding": {
+                    "value": 24,
+                    "unit": "px"
+                }
+            }
+        }
+    ]
+}

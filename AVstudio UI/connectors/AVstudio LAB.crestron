@@ -1,0 +1,15 @@
+{
+    "type": "crestron",
+    "host": "@env:CRESTRON_HOST@",
+    "ipId": "@env:CRESTRON_IP_ID@",
+    "roomId": "@env:CRESTRON_ROOM_ID@",
+    "authToken": "@env:CRESTRON_AUTH_TOKEN@",
+    "globalJoins": {
+        "analogPageFlip_signal_a_fb": "",
+        "serialPageFlip_signal_s_fb": "",
+        "notification_signal_s_fb": "",
+        "refreshDataSources_signal_d_fb": "",
+        "refreshSingleDataSource_signal_s_fb": "",
+        "connected_signal_d_fb": ""
+    }
+}

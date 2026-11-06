@@ -1,0 +1,191 @@
+{
+    "uuid": "c85b5406-972c-448b-8c3c-9efecf40e115",
+    "name": "call-actions",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "background": {
+        "color": "transparent"
+    },
+    "containers": [
+        {
+            "uuid": "09b04c7e-5270-4b4e-8556-fc55432bb373",
+            "name": "Call Actions",
+            "cssClass": "container",
+            "flow": "column",
+            "align": "center",
+            "distribution": "space-between",
+            "elements": [
+                {
+                    "uuid": "4e339209-d7eb-4f0f-b824-1877b4ae63b8",
+                    "type": "button",
+                    "name": "Dial number",
+                    "cssClass": "button",
+                    "text": "",
+                    "iconName": "FaPhone",
+                    "iconSize": {
+                        "value": 68,
+                        "unit": "px"
+                    },
+                    "iconColor": "#68d713",
+                    "width": {
+                        "width": {
+                            "value": 96,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 96,
+                            "unit": "px"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "actions": [
+                        {
+                            "uuid": "208821ce-ffca-425d-87ff-40b7b1c7972a",
+                            "name": "Send complete phone number",
+                            "behaviour": "onClick",
+                            "type": "s",
+                            "signalName_signal": "201",
+                            "value": "$phoneNumber$"
+                        },
+                        {
+                            "uuid": "969330a7-ca82-403b-8b2a-042b936364b4",
+                            "name": "Dial",
+                            "behaviour": "onClick",
+                            "type": "d",
+                            "signalName_signal": "212",
+                            "digitalPushData": "pulse",
+                            "pulseDelay": 100
+                        }
+                    ]
+                },
+                {
+                    "uuid": "cadc1f23-91c9-4d0c-a95b-dab481d08ef0",
+                    "type": "button",
+                    "name": "End Call",
+                    "cssClass": "button",
+                    "text": "",
+                    "iconName": "FaPhoneSlash",
+                    "iconSize": {
+                        "value": 68,
+                        "unit": "px"
+                    },
+                    "iconColor": "#dc001b",
+                    "width": {
+                        "width": {
+                            "value": 96,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 96,
+                            "unit": "px"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "actions": [
+                        {
+                            "uuid": "c201a9fd-0140-4070-87e4-c6e584334765",
+                            "name": "Hang up",
+                            "behaviour": "onClick",
+                            "type": "d",
+                            "signalName_signal": "213",
+                            "digitalPushData": "pulse",
+                            "pulseDelay": 100
+                        },
+                        {
+                            "uuid": "fec10329-96e0-4d9c-9b45-5f71a9ff4556",
+                            "name": "Clear phone number",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "uuid": "4cae20b3-ce99-45d7-b31c-06aa0c6e496e",
+                    "type": "button",
+                    "name": "Hold Call",
+                    "cssClass": "button",
+                    "text": "",
+                    "iconName": "FaPause",
+                    "iconSize": {
+                        "value": 62,
+                        "unit": "px"
+                    },
+                    "iconColor": "#9b9b9b",
+                    "width": {
+                        "width": {
+                            "value": 96,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 96,
+                            "unit": "px"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "actions": [
+                        {
+                            "uuid": "35d04fda-d957-47e3-811b-e2d28570c985",
+                            "name": "Hold call",
+                            "behaviour": "onClick",
+                            "type": "d",
+                            "signalName_signal": "214",
+                            "digitalPushData": "pulse",
+                            "pulseDelay": 100
+                        }
+                    ]
+                }
+            ],
+            "paddingOptions": {
+                "padding": {
+                    "unit": "px"
+                },
+                "paddingTop": {
+                    "value": 60,
+                    "unit": "px"
+                },
+                "paddingBottom": {
+                    "value": 60,
+                    "unit": "px"
+                }
+            },
+            "gap": {
+                "value": 24,
+                "unit": "px"
+            },
+            "scrollMode": "scroll",
+            "allowWrap": true
+        }
+    ],
+    "enableCustomPageSize": false,
+    "gap": {
+        "value": null,
+        "unit": "px"
+    }
+}

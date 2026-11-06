@@ -1,0 +1,301 @@
+{
+    "uuid": "27424fd4-38ca-4334-950c-c2fe379d9664",
+    "name": "audio",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "gap": {
+        "value": 0,
+        "unit": "px"
+    },
+    "paddingOptions": {
+        "paddingLeft": {
+            "value": null,
+            "unit": "px"
+        },
+        "paddingRight": {
+            "value": null,
+            "unit": "px"
+        },
+        "paddingTop": {
+            "value": 0,
+            "unit": "px"
+        },
+        "paddingBottom": {
+            "value": 0,
+            "unit": "px"
+        },
+        "padding": {
+            "value": 16,
+            "unit": "px"
+        }
+    },
+    "background": {
+        "color": ""
+    },
+    "containers": [
+        {
+            "uuid": "58c17176-6b66-4b1d-98f5-fe2e4b5b90f2",
+            "name": "Audio Header",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "center",
+            "distribution": "space-between",
+            "size": {
+                "value": 13,
+                "unit": "%",
+                "manualMode": true
+            },
+            "gap": {
+                "unit": "px"
+            },
+            "background": {
+                "color": "#fafafa"
+            },
+            "border": {
+                "useBorder": true,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+                "borderBottomLeftRadius": 0,
+                "borderBottomRightRadius": 0,
+                "borderBottomWidth": 1,
+                "borderColor": "#b5b5b5",
+                "borderStyle": "solid"
+            },
+            "paddingOptions": {
+                "padding": {
+                    "unit": "px"
+                },
+                "paddingLeft": {
+                    "value": 16,
+                    "unit": "px"
+                },
+                "paddingRight": {
+                    "value": 16,
+                    "unit": "px"
+                }
+            },
+            "elements": [
+                {
+                    "uuid": "ea4a092d-fd32-42cf-89bd-f04d18cf4722",
+                    "type": "text",
+                    "name": "Audio Conference Title",
+                    "cssClass": "text",
+                    "text": "<p>Audio Conference</p>",
+                    "textColor": "#9a9a9a",
+                    "textFontSize": {
+                        "value": 26,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 40,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "unit": "px"
+                        }
+                    },
+                    "fontSize": {
+                        "unit": "vh",
+                        "value": 3
+                    }
+                },
+                {
+                    "uuid": "cc6ad3e7-bfca-4f6d-8cf2-5745135dff92",
+                    "type": "dateTime",
+                    "name": "Audio Date Time",
+                    "cssClass": "dateTimeElement presentation-date-time",
+                    "variant": "datetime",
+                    "datePosition": "before",
+                    "showDate": true,
+                    "showTime": true,
+                    "showSeconds": false,
+                    "useAmPm": true,
+                    "dateColor": "#1478ff",
+                    "dateFontSize": {
+                        "value": 25,
+                        "unit": "px"
+                    },
+                    "textColor": "#1478ff",
+                    "fontSize": {
+                        "value": 25,
+                        "unit": "px"
+                    },
+                    "fontFamily": "audiowide_regular_d0232764ae",
+                    "locale": "en-US",
+                    "timeZone": "America/New_York",
+                    "width": {
+                        "width": {
+                            "value": 40,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "unit": "px",
+                            "value": 300
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 45,
+                            "unit": "px"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "uuid": "847b9162-9ed1-473d-a9ab-c3cc17e38f48",
+            "name": "Audio Content",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "stretch",
+            "gap": {
+                "value": 0,
+                "unit": "px"
+            },
+            "background": {
+                "color": "#fafafa"
+            },
+            "border": {
+                "useBorder": true,
+                "borderTopLeftRadius": 0,
+                "borderTopRightRadius": 0,
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderColor": "#ffffff"
+            },
+            "paddingOptions": {
+                "padding": {
+                    "value": 0,
+                    "unit": "px"
+                }
+            },
+            "elements": [
+                {
+                    "uuid": "c46cd9be-daeb-4bb4-ae91-b6f168ccfd4b",
+                    "type": "subpage",
+                    "name": "Call Actions Subpage",
+                    "cssClass": "subpage",
+                    "subpageName": "./call-actions.page",
+                    "width": {
+                        "width": {
+                            "value": 16,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        },
+                        "maxHeight": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    }
+                },
+                {
+                    "uuid": "94f02e60-a85e-49b2-a46b-2bf8e0c78205",
+                    "type": "subpage",
+                    "name": "Keypad Subpage",
+                    "cssClass": "subpage",
+                    "subpageName": "./keypad.page",
+                    "width": {
+                        "width": {
+                            "value": 57,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        },
+                        "maxHeight": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    }
+                },
+                {
+                    "uuid": "46095e9f-39c0-47e4-8881-313786c77e56",
+                    "type": "spacer",
+                    "name": "Contacts Divider",
+                    "cssClass": "spacerElement",
+                    "background": {
+                        "color": "#b5b5b5"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 1,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    }
+                },
+                {
+                    "uuid": "36afca71-da82-49b6-a957-362242107e31",
+                    "type": "subpage",
+                    "name": "Contacts Subpage",
+                    "cssClass": "subpage",
+                    "subpageName": "./contacts.page",
+                    "width": {
+                        "width": {
+                            "value": 26,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        },
+                        "maxHeight": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    }
+                }
+            ],
+            "scrollMode": "disabled",
+            "size": {
+                "value": 87,
+                "unit": "%",
+                "manualMode": true
+            },
+            "allowWrap": true
+        }
+    ],
+    "enableCustomPageSize": false
+}

@@ -1,0 +1,110 @@
+
+.hero-date-time {
+    color: rgba(59, 67, 255, 1);
+    font-family: audiowide_regular_d0232764ae;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-date-time .dateTimeWidget,
+.hero-date-time.dateTimeWidget {
+    width: 100%;
+    color: inherit;
+    font-family: inherit;
+    font-size: 68px;
+    text-align: center;
+    text-shadow:
+        0 10px 8px rgba(48, 48, 68, 0.10),
+        0 26px 18px rgba(48, 48, 68, 0.09),
+        0 52px 32px rgba(48, 48, 68, 0.07),
+        0 86px 52px rgba(48, 48, 68, 0.045);
+}
+
+.presentation-date-time,
+.presentation-date-time .dateTimeWidget,
+.presentation-date-time.dateTimeWidget {
+    color: #1478ff;
+    font-family: audiowide_regular_d0232764ae;
+    text-align: right;
+}
+
+.element{
+  position: relative;
+    box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 7px 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 0.85em;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: 0.5em;
+}
+
+.element-appear-animation {
+  animation: scaleAppear 0.5s ease-in-out both;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+@keyframes scaleAppear {
+    from {
+        opacity: 0; 
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.keypadElement{
+  color: rgba(155,155,155,1.00);
+}
+
+.keypadNew {
+  color: black;
+}
+
+.inputElement input {
+  color: black !important;
+  background-color: rgba(155,155,155,0.13);
+}
+
+.card-label-field {
+    background: rgba(255, 255, 255, 0.90);
+    border-radius: 10px;
+}
+
+.card-description-field {
+    background: rgba(255, 255, 255, 0.90);
+    border-top-left-radius: 20px; /* Adjust this value to control the curvature of the top-left corner */
+    border-bottom-left-radius: 20px; /* Adjust this value to control the curvature of the bottom-left corner */
+}
+
+.spacerElement {
+  z-index: 1;
+}
+
+.text-container {
+    white-space: pre-line;
+}
+
+.arrow {
+  font-size: 24px;
+  color: #4d8ff5;
+  transition: font-size .3s;
+}
+
+/* Align the icon-and-label wrapper, not only the outer contact button. */
+.contact-row > div:last-child {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.contact-row > div:last-child > :first-child {
+    flex-shrink: 0;
+}

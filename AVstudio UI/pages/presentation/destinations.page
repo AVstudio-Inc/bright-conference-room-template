@@ -1,0 +1,315 @@
+{
+    "uuid": "6d4ebe05-0db7-44b6-a047-55613fefeddd",
+    "name": "destinations",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "gap": {
+        "value": 0,
+        "unit": "px"
+    },
+    "background": {
+        "color": "transparent"
+    },
+    "containers": [
+        {
+            "uuid": "d3c8a0a1-2a55-4e2f-91d1-000000000011",
+            "name": "Destination Header",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "center",
+            "distribution": "space-between",
+            "size": {
+                "value": 48,
+                "unit": "px",
+                "manualMode": true
+            },
+            "paddingOptions": {
+                "paddingLeft": {
+                    "value": 3,
+                    "unit": "%"
+                },
+                "paddingRight": {
+                    "value": 3,
+                    "unit": "%"
+                }
+            },
+            "elements": [
+                {
+                    "uuid": "d3c8a0a1-2a55-4e2f-91d1-000000000012",
+                    "type": "text",
+                    "name": "Destination Heading",
+                    "cssClass": "text",
+                    "text": "<p>DESTINATION</p>",
+                    "textColor": "#474747",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 65,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "unit": "%"
+                        }
+                    }
+                },
+                {
+                    "uuid": "d3c8a0a1-2a55-4e2f-91d1-000000000013",
+                    "type": "stateControl",
+                    "name": "Destination Power",
+                    "cssClass": "stateControlElement",
+                    "variant": "switch",
+                    "text": "",
+                    "color": "#1478ff",
+                    "backgroundUnchecked": "#d6d9df",
+                    "thumbCheckedBackground": "#ffffff",
+                    "thumbUncheckedBackground": "#ffffff",
+                    "size": 22,
+                    "width": {
+                        "width": {
+                            "value": 64,
+                            "unit": "px"
+                        },
+                        "minWidth": {
+                            "value": 64,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 44,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "border": {
+                        "useBorder": false
+                    },
+                    "value": "$destinationPower$",
+                    "actions": [
+                        {
+                            "uuid": "811ddc75-54e3-41c7-96fd-d1252065437c",
+                            "name": "Simulate destination power",
+                            "behaviour": "onChange",
+                            "type": "v",
+                            "attachedVariableName": "destinationPower",
+                            "onChangeActionUseCustomValue": false
+                        },
+                        {
+                            "uuid": "333b36de-d42c-47ed-a4ae-1259d0127a91",
+                            "name": "Set display power",
+                            "type": "d",
+                            "behaviour": "onChange",
+                            "signalName_signal": "110",
+                            "onChangeActionUseCustomValue": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "uuid": "8e70e3c3-7300-431d-8871-6610dcaff384",
+            "name": "Destination Cards",
+            "cssClass": "container",
+            "flow": "column",
+            "align": "center",
+            "distribution": "space-around",
+            "elements": [
+                {
+                    "uuid": "d3c8a0a1-2a55-4e2f-91d1-000000000014",
+                    "type": "subpage",
+                    "name": "Destination A",
+                    "cssClass": "subpage",
+                    "subpageName": "./destination-display.page",
+                    "width": {
+                        "width": {
+                            "value": 94,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 30,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#f4f6f8"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderWidth": 5,
+                        "borderColor": "#646b73",
+                        "borderRadius": 8,
+                        "borderStyle": "solid"
+                    },
+                    "activeModeIndex": "$destinationASelected$",
+                    "modes": [
+                        {
+                            "name": "Selected",
+                            "isModeHasOwnActions": false,
+                            "modeProps": {
+                                "border": {
+                                    "useBorder": true,
+                                    "borderWidth": 5,
+                                    "borderColor": "#1478ff",
+                                    "borderRadius": 8,
+                                    "borderStyle": "solid"
+                                }
+                            }
+                        }
+                    ],
+                    "inputParameters": {
+                        "title": "Destination A",
+                        "sourceLabel": "$destinationASourceLabel$",
+                        "sourceIcon": "$destinationASourceIcon$",
+                        "selected": "$destinationASelected$",
+                        "selectionVariable": "destinationASelected",
+                        "selectionJoin": "101"
+                    }
+                },
+                {
+                    "uuid": "d3c8a0a1-2a55-4e2f-91d1-000000000015",
+                    "type": "subpage",
+                    "name": "Destination B",
+                    "cssClass": "subpage",
+                    "subpageName": "./destination-display.page",
+                    "width": {
+                        "width": {
+                            "value": 94,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 30,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#f4f6f8"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderWidth": 5,
+                        "borderColor": "#646b73",
+                        "borderRadius": 8,
+                        "borderStyle": "solid"
+                    },
+                    "activeModeIndex": "$destinationBSelected$",
+                    "modes": [
+                        {
+                            "name": "Selected",
+                            "isModeHasOwnActions": false,
+                            "modeProps": {
+                                "border": {
+                                    "useBorder": true,
+                                    "borderWidth": 5,
+                                    "borderColor": "#1478ff",
+                                    "borderRadius": 8,
+                                    "borderStyle": "solid"
+                                }
+                            }
+                        }
+                    ],
+                    "inputParameters": {
+                        "title": "Destination B",
+                        "sourceLabel": "$destinationBSourceLabel$",
+                        "sourceIcon": "$destinationBSourceIcon$",
+                        "selected": "$destinationBSelected$",
+                        "selectionVariable": "destinationBSelected",
+                        "selectionJoin": "102"
+                    }
+                },
+                {
+                    "uuid": "d3c8a0a1-2a55-4e2f-91d1-000000000016",
+                    "type": "subpage",
+                    "name": "Destination C",
+                    "cssClass": "subpage",
+                    "subpageName": "./destination-display.page",
+                    "width": {
+                        "width": {
+                            "value": 94,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 30,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#f4f6f8"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderWidth": 5,
+                        "borderColor": "#646b73",
+                        "borderRadius": 8,
+                        "borderStyle": "solid"
+                    },
+                    "activeModeIndex": "$destinationCSelected$",
+                    "modes": [
+                        {
+                            "name": "Selected",
+                            "isModeHasOwnActions": false,
+                            "modeProps": {
+                                "border": {
+                                    "useBorder": true,
+                                    "borderWidth": 5,
+                                    "borderColor": "#1478ff",
+                                    "borderRadius": 8,
+                                    "borderStyle": "solid"
+                                }
+                            }
+                        }
+                    ],
+                    "inputParameters": {
+                        "title": "Destination C",
+                        "sourceLabel": "$destinationCSourceLabel$",
+                        "sourceIcon": "$destinationCSourceIcon$",
+                        "selected": "$destinationCSelected$",
+                        "selectionVariable": "destinationCSelected",
+                        "selectionJoin": "103"
+                    }
+                }
+            ],
+            "paddingOptions": {
+                "paddingLeft": {
+                    "unit": "px"
+                },
+                "padding": {
+                    "unit": "px"
+                }
+            },
+            "allowWrap": true,
+            "scrollMode": "disabled"
+        }
+    ]
+}

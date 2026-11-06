@@ -1,0 +1,48 @@
+THIRD-PARTY SVG ICON NOTICES
+
+The following files are supplied as SVG symbol sprites, converted from icon data
+published in react-icons 5.6.0 by the AVstudio NG sprite generator.
+The SVG geometry was not edited for this template. Conversion changes include
+wrapping SVG data in symbol/defs elements, assigning exported icon names as IDs,
+and serializing attributes to SVG XML. These are generated adaptations, not original
+AVstudio-Inc artwork. No endorsement by upstream authors or trademark owners is implied.
+
+assets/icons/fa.svg — Font Awesome Free 5
+Copyright Fonticons, Inc. https://fontawesome.com/
+License for SVG icon artwork: Creative Commons Attribution 4.0 International.
+https://creativecommons.org/licenses/by/4.0/
+Upstream: https://github.com/FortAwesome/Font-Awesome
+react-icons reports version 5.15.4-3-gafecf2a; pinned upstream commit:
+afecf2af5d897b763e5e8e28d46aad2f710ccad6
+See FONT-AWESOME-5-LICENSE.txt and CC-BY-4.0.txt.
+
+assets/icons/fa6.svg — Font Awesome Free 6
+Copyright Fonticons, Inc. https://fontawesome.com/
+License for SVG icon artwork: Creative Commons Attribution 4.0 International.
+https://creativecommons.org/licenses/by/4.0/
+Upstream: https://github.com/FortAwesome/Font-Awesome
+react-icons reports version 6.5.2; pinned upstream commit:
+840c215f894f429b26b8c1402a65da835dc5a450
+See FONT-AWESOME-6-LICENSE.txt and CC-BY-4.0.txt.
+
+assets/icons/ai.svg — Ant Design Icons
+Copyright (c) 2018-present Ant UED, https://xtech.antfin.com/
+License: MIT, with the upstream copyright and permission notice preserved.
+Upstream: https://github.com/ant-design/ant-design-icons
+react-icons reports version 4.4.2; pinned upstream commit:
+375bc01003dfda1eda39aa8742be85a5c0249db8
+See ANT-DESIGN-ICONS-MIT.txt.
+
+Data intermediary: react-icons 5.6.0
+Copyright 2018 kamijin_fanta <kamijin@live.jp>
+https://github.com/react-icons/react-icons/tree/v5.6.0
+Its MIT license does not replace each icon family's artwork license.
+See REACT-ICONS-LICENSE.txt for the original package notice.
+
+Verification: all three sprites reproduced byte-for-byte from the exact published
+react-icons 5.6.0 package; see docs/ICON-PROVENANCE.md for hashes and counts.
+
+Preserve this notice and accompanying license texts when copying or exporting
+these sprites, including when their SVG data is embedded in an HTML build.
+Brand icons identify their respective companies/products/services. Trademarks remain
+with their owners; this notice does not grant trademark or endorsement rights.

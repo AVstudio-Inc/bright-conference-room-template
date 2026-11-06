@@ -1,0 +1,153 @@
+{
+    "uuid": "6a570529-a1bb-4a28-8ef0-9e7c99ab269b",
+    "name": "source-card",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "background": {
+        "color": "transparent"
+    },
+    "parameters": {
+        "label": {
+            "type": "string",
+            "defaultValue": "Source",
+            "currentValue": "Source"
+        },
+        "icon": {
+            "type": "string",
+            "defaultValue": "FaDesktop",
+            "currentValue": "FaDesktop"
+        },
+        "selectionVariable": {
+            "type": "string",
+            "defaultValue": "presentationSource",
+            "currentValue": "presentationSource"
+        },
+        "iconPixels": {
+            "type": "number",
+            "defaultValue": 66,
+            "currentValue": 66
+        },
+        "textPixels": {
+            "type": "number",
+            "defaultValue": 18,
+            "currentValue": 18
+        },
+        "cardWidth": {
+            "type": "number",
+            "defaultValue": 66,
+            "currentValue": 66
+        },
+        "cardHeight": {
+            "type": "number",
+            "defaultValue": 80,
+            "currentValue": 80
+        },
+        "sourceJoin": {
+            "type": "string",
+            "defaultValue": "100",
+            "currentValue": "100"
+        },
+        "sourceValue": {
+            "type": "number",
+            "defaultValue": 0,
+            "currentValue": 0
+        }
+    },
+    "containers": [
+        {
+            "uuid": "fddfe1a3-a1b4-4eac-a313-0f2d50f6eb52",
+            "name": "Source card",
+            "cssClass": "container",
+            "flow": "column",
+            "align": "center",
+            "distribution": "center",
+            "scrollMode": "disabled",
+            "background": {
+                "color": "transparent"
+            },
+            "elements": [
+                {
+                    "uuid": "e1fae8f5-9047-410e-bf71-52d652ee6ecc",
+                    "type": "button",
+                    "name": "Source card",
+                    "cssClass": "button",
+                    "text": "<p>%label%</p>",
+                    "iconName": "%icon%",
+                    "iconSize": {
+                        "value": "%iconPixels%",
+                        "unit": "px"
+                    },
+                    "iconColor": "#9b9b9b",
+                    "iconPosition": "top",
+                    "textColor": "#9b9b9b",
+                    "textFontSize": {
+                        "value": "%textPixels%",
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": "%cardWidth%",
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": "%cardHeight%",
+                            "unit": "%"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "modes": [
+                        {
+                            "name": "Active",
+                            "isModeHasOwnActions": false,
+                            "modeProps": {
+                                "iconColor": "#3784ff",
+                                "textColor": "#3784ff",
+                                "border": {
+                                    "useBorder": true,
+                                    "borderWidth": 0,
+                                    "borderBottomWidth": 5,
+                                    "borderColor": "#3784ff",
+                                    "borderStyle": "solid",
+                                    "borderBottomRightRadius": 22,
+                                    "borderBottomLeftRadius": 22
+                                }
+                            }
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "ba19e021-6ba5-4be8-90c0-e97cf705261d",
+                            "name": "Select source",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "%selectionVariable%",
+                            "value": "%avstudio_listItemKey%"
+                        },
+                        {
+                            "uuid": "708754e6-a271-48d7-bb62-1b83585aae22",
+                            "name": "Request source from controller",
+                            "behaviour": "onClick",
+                            "type": "a",
+                            "signalName_signal": "%sourceJoin%",
+                            "value": "%sourceValue%"
+                        },
+                        {
+                            "uuid": "a5e07ddf-9dbd-4f75-a225-979c014275ae",
+                            "name": "Demonstrate local source assignment",
+                            "behaviour": "onClick",
+                            "type": "f",
+                            "attachedFunctionToRun": "functions/presentation/routeSource.js",
+                            "value": "%selectionVariable%"
+                        }
+                    ],
+                    "activeModeIndex": "%avstudio_listItemIsSelected%"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,830 @@
+{
+    "uuid": "c84831a7-f868-402f-abda-984d1c5bc508",
+    "name": "keypad",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "gap": {
+        "value": 8,
+        "unit": "px"
+    },
+    "paddingOptions": {
+        "padding": {
+            "value": 2,
+            "unit": "%"
+        }
+    },
+    "background": {
+        "color": "transparent"
+    },
+    "containers": [
+        {
+            "uuid": "5bff0270-e5b9-4358-b70a-d971e546e951",
+            "name": "Phone Input Row",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "center",
+            "distribution": "center",
+            "elements": [
+                {
+                    "uuid": "9b9d877f-5161-482c-a80d-707fba5ae4c2",
+                    "type": "input",
+                    "name": "Phone Number",
+                    "cssClass": "inputElement audio-phone-input",
+                    "placeholder": "Enter phone here",
+                    "autofocus": false,
+                    "displayAsPassword": false,
+                    "displayAsNumber": false,
+                    "input_signal_s_fb": "",
+                    "input_direct_value": "$phoneNumber$",
+                    "activeValueStateSource": "direct",
+                    "textColor": "#777777",
+                    "fontFamily": "audiowide_regular_d0232764ae",
+                    "fontSize": {
+                        "value": 22,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#f1f1f1"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 6,
+                        "borderWidth": 0,
+                        "borderColor": "transparent"
+                    },
+                    "actions": [
+                        {
+                            "uuid": "8a71b795-e873-4ba2-80d9-e4585dee90b2",
+                            "name": "Edit phone number",
+                            "behaviour": "onChange",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "onChangeActionUseCustomValue": false
+                        }
+                    ]
+                }
+            ],
+            "scrollMode": "disabled",
+            "size": {
+                "value": 64,
+                "unit": "px",
+                "manualMode": true
+            },
+            "allowWrap": true
+        },
+        {
+            "uuid": "361fbc54-0ebf-4468-8dbb-c580f79acbf1",
+            "name": "Keypad Row 1",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "stretch",
+            "distribution": "flex-start",
+            "gap": {
+                "value": 2,
+                "unit": "%"
+            },
+            "elements": [
+                {
+                    "uuid": "4d4b0486-e267-4f22-8942-668e8b5d16a1",
+                    "type": "button",
+                    "name": "Key 1",
+                    "cssClass": "button",
+                    "text": "<p style=\"text-align: center;\">1<br><span style=\"font-size: 0.65em;\">&nbsp;</span></p>",
+                    "textColor": "#111111",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 32,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#eeeeee"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 6,
+                        "borderWidth": 0
+                    },
+                    "actions": [
+                        {
+                            "uuid": "80d8f01b-b357-4d51-81be-2294bd1cfce2",
+                            "name": "Append 1",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "value": "$phoneNumber$1"
+                        }
+                    ],
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    }
+                },
+                {
+                    "uuid": "80da1877-6f9d-425e-94f1-dbfc3d63d399",
+                    "type": "button",
+                    "name": "Key 2",
+                    "cssClass": "button",
+                    "text": "<p style=\"text-align: center;\">2<br><span style=\"font-size: 0.65em;\">ABC</span></p>",
+                    "textColor": "#111111",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 32,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#eeeeee"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 6,
+                        "borderWidth": 0
+                    },
+                    "actions": [
+                        {
+                            "uuid": "33e4827b-0325-4b68-a294-6980d348a4a9",
+                            "name": "Append 2",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "value": "$phoneNumber$2"
+                        }
+                    ],
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    }
+                },
+                {
+                    "uuid": "1597a312-86ef-48a4-be53-712592642fd8",
+                    "type": "button",
+                    "name": "Key 3",
+                    "cssClass": "button",
+                    "text": "<p style=\"text-align: center;\">3<br><span style=\"font-size: 0.65em;\">DEF</span></p>",
+                    "textColor": "#111111",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 32,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#eeeeee"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 6,
+                        "borderWidth": 0
+                    },
+                    "actions": [
+                        {
+                            "uuid": "9ceb32f0-fc2f-4976-b546-dd4af26e5039",
+                            "name": "Append 3",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "value": "$phoneNumber$3"
+                        }
+                    ],
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    }
+                }
+            ],
+            "scrollMode": "disabled",
+            "allowWrap": true
+        },
+        {
+            "uuid": "f10aec78-2d37-46d3-92b1-8d51720e48bf",
+            "name": "Keypad Row 2",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "stretch",
+            "distribution": "flex-start",
+            "gap": {
+                "value": 2,
+                "unit": "%"
+            },
+            "elements": [
+                {
+                    "uuid": "7ac6b115-77cb-4871-910d-2c2ea29117a9",
+                    "type": "button",
+                    "name": "Key 4",
+                    "cssClass": "button",
+                    "text": "<p style=\"text-align: center;\">4<br><span style=\"font-size: 0.65em;\">GHI</span></p>",
+                    "textColor": "#111111",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 32,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#eeeeee"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 6,
+                        "borderWidth": 0
+                    },
+                    "actions": [
+                        {
+                            "uuid": "c9e1c944-4017-4d9e-b132-e81820d0af3f",
+                            "name": "Append 4",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "value": "$phoneNumber$4"
+                        }
+                    ],
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    }
+                },
+                {
+                    "uuid": "426e01d4-9d36-42ce-b6e5-4178c074451f",
+                    "type": "button",
+                    "name": "Key 5",
+                    "cssClass": "button",
+                    "text": "<p style=\"text-align: center;\">5<br><span style=\"font-size: 0.65em;\">JKL</span></p>",
+                    "textColor": "#111111",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 32,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#eeeeee"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 6,
+                        "borderWidth": 0
+                    },
+                    "actions": [
+                        {
+                            "uuid": "a06fec6f-bfeb-4915-b109-e79249a0e1e7",
+                            "name": "Append 5",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "value": "$phoneNumber$5"
+                        }
+                    ],
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    }
+                },
+                {
+                    "uuid": "0f876ad1-d9d9-41ee-951b-85710f0e47eb",
+                    "type": "button",
+                    "name": "Key 6",
+                    "cssClass": "button",
+                    "text": "<p style=\"text-align: center;\">6<br><span style=\"font-size: 0.65em;\">MNO</span></p>",
+                    "textColor": "#111111",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 32,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#eeeeee"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 6,
+                        "borderWidth": 0
+                    },
+                    "actions": [
+                        {
+                            "uuid": "8e2e2c11-4997-4a42-9017-c16edfe8b53d",
+                            "name": "Append 6",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "value": "$phoneNumber$6"
+                        }
+                    ],
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    }
+                }
+            ],
+            "scrollMode": "disabled",
+            "allowWrap": true
+        },
+        {
+            "uuid": "25030277-b89a-4fcf-a0c5-1f5f7666914d",
+            "name": "Keypad Row 3",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "stretch",
+            "distribution": "flex-start",
+            "gap": {
+                "value": 2,
+                "unit": "%"
+            },
+            "elements": [
+                {
+                    "uuid": "ba9e4b62-38dc-4467-9517-fc5051c160cd",
+                    "type": "button",
+                    "name": "Key 7",
+                    "cssClass": "button",
+                    "text": "<p style=\"text-align: center;\">7<br><span style=\"font-size: 0.65em;\">PQRS</span></p>",
+                    "textColor": "#111111",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 32,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#eeeeee"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 6,
+                        "borderWidth": 0
+                    },
+                    "actions": [
+                        {
+                            "uuid": "54ef7daa-771d-4784-9178-4b6de584707c",
+                            "name": "Append 7",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "value": "$phoneNumber$7"
+                        }
+                    ],
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    }
+                },
+                {
+                    "uuid": "14e93a7a-f874-47a0-8365-172409a300b6",
+                    "type": "button",
+                    "name": "Key 8",
+                    "cssClass": "button",
+                    "text": "<p style=\"text-align: center;\">8<br><span style=\"font-size: 0.65em;\">TUV</span></p>",
+                    "textColor": "#111111",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 32,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#eeeeee"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 6,
+                        "borderWidth": 0
+                    },
+                    "actions": [
+                        {
+                            "uuid": "233171ea-d948-4932-9eb8-0d9ca07cb2e8",
+                            "name": "Append 8",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "value": "$phoneNumber$8"
+                        }
+                    ],
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    }
+                },
+                {
+                    "uuid": "55f6391f-3071-4b50-bf2b-5ac467b9ea13",
+                    "type": "button",
+                    "name": "Key 9",
+                    "cssClass": "button",
+                    "text": "<p style=\"text-align: center;\">9<br><span style=\"font-size: 0.65em;\">WXYZ</span></p>",
+                    "textColor": "#111111",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 32,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#eeeeee"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 6,
+                        "borderWidth": 0
+                    },
+                    "actions": [
+                        {
+                            "uuid": "b565fef2-3451-451c-80ea-d8b6a21de22a",
+                            "name": "Append 9",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "value": "$phoneNumber$9"
+                        }
+                    ],
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    }
+                }
+            ],
+            "scrollMode": "disabled",
+            "allowWrap": true
+        },
+        {
+            "uuid": "58840dc7-dd5d-40d1-b891-55a8e2f5a242",
+            "name": "Keypad Row 4",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "stretch",
+            "distribution": "flex-start",
+            "gap": {
+                "value": 2,
+                "unit": "%"
+            },
+            "elements": [
+                {
+                    "uuid": "d49ffb72-7156-41c4-91ae-705c734c4e4b",
+                    "type": "button",
+                    "name": "Key Star",
+                    "cssClass": "button",
+                    "text": "<p style=\"text-align: center;\">*<br><span style=\"font-size: 0.65em;\">&nbsp;</span></p>",
+                    "textColor": "#111111",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 32,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#eeeeee"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 6,
+                        "borderWidth": 0
+                    },
+                    "actions": [
+                        {
+                            "uuid": "97f59fd4-2405-4c05-995f-7ef6675e240b",
+                            "name": "Append *",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "value": "$phoneNumber$*"
+                        }
+                    ],
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    }
+                },
+                {
+                    "uuid": "99d9efcd-d845-4ebc-8710-c31cc4057e34",
+                    "type": "button",
+                    "name": "Key 0",
+                    "cssClass": "button",
+                    "text": "<p style=\"text-align: center;\">0<br><span style=\"font-size: 0.65em;\">+</span></p>",
+                    "textColor": "#111111",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 32,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#eeeeee"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 6,
+                        "borderWidth": 0
+                    },
+                    "actions": [
+                        {
+                            "uuid": "8c0f58c5-ccf2-4fe0-ad08-a8d6a783957b",
+                            "name": "Append 0",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "value": "$phoneNumber$0"
+                        }
+                    ],
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    }
+                },
+                {
+                    "uuid": "0f76368a-a61e-43ea-84c8-8acc7671d037",
+                    "type": "button",
+                    "name": "Key Hash",
+                    "cssClass": "button",
+                    "text": "<p style=\"text-align: center;\">#<br><span style=\"font-size: 0.65em;\">&nbsp;</span></p>",
+                    "textColor": "#111111",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 32,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "#eeeeee"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 6,
+                        "borderWidth": 0
+                    },
+                    "actions": [
+                        {
+                            "uuid": "c8156ffe-21ed-4f98-af74-d40d7e99e91a",
+                            "name": "Append #",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "value": "$phoneNumber$#"
+                        }
+                    ],
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    }
+                }
+            ],
+            "scrollMode": "disabled",
+            "allowWrap": true
+        }
+    ],
+    "enableCustomPageSize": false
+}

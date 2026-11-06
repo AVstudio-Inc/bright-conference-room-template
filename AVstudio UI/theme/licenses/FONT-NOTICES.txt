@@ -1,0 +1,28 @@
+FONT COPYRIGHT AND LICENSE NOTICES
+
+All paths below are relative to AVstudio UI/theme/.
+These notices are transcribed from the included, unmodified font binaries.
+Each font remains licensed under SIL Open Font License, Version 1.1.
+Full license: OFL-1.1.txt in this directory.
+Official text: https://openfontlicense.org/documents/OFL.txt
+
+File: audiowide_regular_d0232764ae.ttf
+Family: Audiowide; Regular; Version 1.003
+Copyright (c) 2012 by Brian J. Bonislawsky DBA Astigmatic (AOETI)
+(astigma@astigmatic.com), with Reserved Font Name "Audiowide"
+Designer/manufacturer: Astigmatic (AOETI)
+
+File: poppins-thin-dthrt1kc.otf
+Family: Poppins Thin; Regular; Version 3.200
+Copyright 2014-2017 Indian Type Foundry (info@indiantypefoundry.com)
+Designers: Ninad Kale (Devanagari), Jonny Pinhorn (Latin)
+
+File: sofia-dnih4rzx.ttf
+Family: Sofia Sans Extra Condensed; Regular; Version 4.100
+Copyright 2019 The Sofia Sans Project Authors
+(https://github.com/lettersoup/Sofia-Sans)
+Manufacturer: lettersoup
+Designers: Botio Nikoltchev, Ani Petrova
+
+These font files are excluded from the project's MIT license.
+Preserve these notices and OFL-1.1.txt when redistributing the fonts.

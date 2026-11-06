@@ -1,0 +1,114 @@
+{
+    "uuid": "5688fe48-ee8b-4739-8b4d-2937bc1d099a",
+    "name": "contact-card",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "background": {
+        "color": "transparent"
+    },
+    "parameters": {
+        "contactName": {
+            "type": "string",
+            "defaultValue": "Contact",
+            "currentValue": "Contact"
+        },
+        "phone": {
+            "type": "string",
+            "defaultValue": "",
+            "currentValue": ""
+        }
+    },
+    "containers": [
+        {
+            "uuid": "fbb2de6a-96b8-4965-898f-6a1ca34471cb",
+            "name": "Contact",
+            "cssClass": "container",
+            "flow": "column",
+            "align": "stretch",
+            "distribution": "center",
+            "scrollMode": "disabled",
+            "elements": [
+                {
+                    "uuid": "53e3db66-09ac-4e96-a2be-e11e43837e97",
+                    "type": "button",
+                    "name": "Select contact",
+                    "cssClass": "button contact-row",
+                    "text": "<p style=\"text-align: left;\">%contactName%</p><p style=\"text-align: left;\">%phone%</p>",
+                    "iconName": "FaRegUserCircle",
+                    "iconSize": {
+                        "value": 40,
+                        "unit": "px"
+                    },
+                    "iconColor": "#9b9b9b",
+                    "iconPosition": "left",
+                    "textColor": "#9b9b9b",
+                    "textFontSize": {
+                        "value": 16,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "allowTextWrap": true,
+                    "textTransform": "none",
+                    "actions": [
+                        {
+                            "uuid": "b2d4fd95-a6d1-4eed-a24d-bed6d81ce172",
+                            "name": "Use contact number",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "phoneNumber",
+                            "value": "%phone%"
+                        }
+                    ],
+                    "paddingOptions": {
+                        "paddingLeft": {
+                            "value": 12,
+                            "unit": "px"
+                        },
+                        "paddingRight": {
+                            "value": 12,
+                            "unit": "px"
+                        }
+                    },
+                    "gap": {
+                        "value": 12,
+                        "unit": "px"
+                    }
+                }
+            ],
+            "allowWrap": true,
+            "border": {
+                "useBorder": false
+            },
+            "paddingOptions": {
+                "paddingLeft": {
+                    "value": 10,
+                    "unit": "px"
+                },
+                "paddingRight": {
+                    "value": 10,
+                    "unit": "px"
+                }
+            }
+        }
+    ],
+    "enableCustomPageSize": false
+}

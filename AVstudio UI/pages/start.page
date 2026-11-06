@@ -1,0 +1,365 @@
+{
+    "uuid": "1e78a374-33d6-4342-b941-5dcd8eef79d2",
+    "name": "start",
+    "layout": "responsive",
+    "cssClass": "page",
+    "containers": [
+        {
+            "uuid": "2080079f-6658-4f39-8458-473e58349e0f",
+            "name": "Container",
+            "elements": [
+                {
+                    "uuid": "a229a587-cb70-4627-a02c-7702ac5163f8",
+                    "type": "subpage",
+                    "name": "Subpage_1",
+                    "cssClass": "subpage",
+                    "subpageName": "pages/components/activity-card.page",
+                    "width": {
+                        "width": {
+                            "value": 100,
+                            "unit": "%",
+                            "uuid": "97ad4bb5-6780-407a-9881-f7cb485d161c"
+                        },
+                        "uuid": "db2cfafd-4660-4f2f-be2f-b2fbe9f17c29"
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%",
+                            "uuid": "5b353a02-cdab-4009-a7b1-172e156b5a28"
+                        },
+                        "uuid": "09485c19-d251-4253-bd5e-c9a7fab96456"
+                    },
+                    "boxShadow": {
+                        "color": "black",
+                        "blur": 50,
+                        "uuid": "2fb0d1e0-2c6a-4b71-9834-f7a8f4a01a6f"
+                    },
+                    "boxReflect": {
+                        "position": "bottom",
+                        "offset": 1,
+                        "startOpacity": 80,
+                        "endOpacity": 0,
+                        "uuid": "4790578d-ce01-43c6-b3f8-cedae7e08af7"
+                    },
+                    "border": {
+                        "useBorder": false,
+                        "borderRadius": 30,
+                        "uuid": "706ffd95-8d81-41d6-aea7-2357c83dfdb4"
+                    },
+                    "paddingOptions": {
+                        "padding": {
+                            "unit": "px",
+                            "uuid": "64b3fa52-1357-4e76-b3d5-7b87a31f6302"
+                        },
+                        "uuid": "859d5999-5c01-449c-a982-d43c7f98821f",
+                        "paddingBottom": {
+                            "unit": "px"
+                        },
+                        "paddingRight": {
+                            "unit": "px"
+                        }
+                    },
+                    "actions": [
+                        {
+                            "name": "Presentation",
+                            "behaviour": "onPress",
+                            "pageFlipTarget": "pages/presentation/presentation.page",
+                            "type": "r",
+                            "uuid": "52c19639-ad02-4831-b55f-8c6b79475d65"
+                        }
+                    ],
+                    "inputParameters": {
+                        "label": "IN ROOM DISPLAY ONLY",
+                        "description": "START PRESENTATION",
+                        "imagePath": "assets/images/presentation_bg.jpg"
+                    }
+                }
+            ],
+            "cssClass": "container",
+            "paddingOptions": {
+                "padding": {
+                    "unit": "px",
+                    "uuid": "d99e5e97-95e3-4418-8d5d-9f6f24128f5e"
+                },
+                "uuid": "fc2e2df0-642f-42e3-ba77-3491116ad25a",
+                "paddingRight": {
+                    "unit": "px"
+                },
+                "paddingLeft": {
+                    "unit": "px",
+                    "value": 12
+                }
+            }
+        },
+        {
+            "uuid": "1573ca5f-56eb-42f4-946e-7a985e04668e",
+            "name": "Container",
+            "elements": [
+                {
+                    "uuid": "dadf3e8c-84ed-427d-954b-e9d511a65dc4",
+                    "type": "subpage",
+                    "name": "Subpage_3",
+                    "cssClass": "subpage",
+                    "subpageName": "pages/components/activity-card.page",
+                    "width": {
+                        "width": {
+                            "value": 100,
+                            "unit": "%",
+                            "uuid": "4ae373d9-d113-4aeb-ba03-1b75c9f92f9b"
+                        },
+                        "uuid": "4c725fd1-d362-439a-af68-7424c002186a"
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%",
+                            "uuid": "0c7ea6a9-40c4-4ead-aaed-607394555474"
+                        },
+                        "uuid": "18b06003-eb82-4301-848e-5e4b6e2b2e36"
+                    },
+                    "boxShadow": {
+                        "color": "black",
+                        "blur": 50,
+                        "uuid": "fe0a9365-41ff-4e85-a6c8-fd941aa0544a"
+                    },
+                    "boxReflect": {
+                        "position": "bottom",
+                        "offset": 1,
+                        "startOpacity": 80,
+                        "endOpacity": 0,
+                        "uuid": "3cdb8499-fffa-421e-be07-d74ecaf5c9cf"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 30,
+                        "uuid": "5a941605-83b8-4d3a-933e-cf0f23bc26f8"
+                    },
+                    "inputParameters": {
+                        "label": "AUDIO CALLS ONLY",
+                        "description": "AUDIO CONFERENCE",
+                        "imagePath": "assets/images/audio_bg.jpg"
+                    },
+                    "actions": [
+                        {
+                            "uuid": "369c8d64-8d2e-4e88-9933-ebbd16140295",
+                            "name": "Open Audio Conference",
+                            "behaviour": "onPress",
+                            "type": "r",
+                            "pageFlipTarget": "pages/audio/audio.page"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "e1da6b28-28c6-4e74-a772-da01e8e0438e",
+                    "type": "subpage",
+                    "name": "Subpage_2",
+                    "cssClass": "subpage",
+                    "subpageName": "pages/components/activity-card.page",
+                    "width": {
+                        "width": {
+                            "value": 100,
+                            "unit": "%",
+                            "uuid": "76d87a71-d158-4d78-9cc9-aafcac7c77ce"
+                        },
+                        "uuid": "c65a4937-21c4-442f-bbc3-5dc9ffb04a53"
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%",
+                            "uuid": "554f7a2c-a408-44bf-b95a-2372fb10da04"
+                        },
+                        "uuid": "fdd206a0-4553-466d-bb99-268955166527"
+                    },
+                    "boxShadow": {
+                        "color": "black",
+                        "blur": 50,
+                        "uuid": "7b32622e-a8cc-4ea0-a6ef-dfe580f1aac2"
+                    },
+                    "boxReflect": {
+                        "position": "bottom",
+                        "offset": 1,
+                        "startOpacity": 80,
+                        "endOpacity": 0,
+                        "uuid": "5ccc1b12-6511-47fb-8e45-79701e13bc96"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 30,
+                        "uuid": "08f6b156-6d98-48ed-8646-fe7af13c4550"
+                    },
+                    "actions": [
+                        {
+                            "name": "route",
+                            "behaviour": "onPress",
+                            "type": "r",
+                            "pageFlipTarget": "pages/video/video.page"
+                        }
+                    ],
+                    "inputParameters": {
+                        "label": "CONNECT WITH PC",
+                        "description": "CAMERA CONTROL",
+                        "imagePath": "assets/images/camera_bg.jpg"
+                    }
+                }
+            ],
+            "cssClass": "container",
+            "paddingOptions": {
+                "padding": {
+                    "unit": "px",
+                    "uuid": "3769274d-3127-446d-8846-3998f55ade0c"
+                },
+                "uuid": "f14744e7-eee4-4665-975e-3e6edce67c38",
+                "paddingLeft": {
+                    "unit": "px",
+                    "value": 12
+                }
+            }
+        },
+        {
+            "uuid": "99065770-a969-43a0-a313-d1a67cc43f57",
+            "name": "Container",
+            "elements": [
+                {
+                    "uuid": "1f203fe0-7e5b-4602-9bc6-2f8cb88a77a6",
+                    "type": "dateTime",
+                    "name": "Date_Time_1",
+                    "cssClass": "dateTimeElement hero-date-time",
+                    "variant": "datetime",
+                    "width": {
+                        "width": {
+                            "value": 80,
+                            "unit": "%",
+                            "uuid": "3c5e17ac-b943-472f-9882-5e9ff0e6fbbd"
+                        },
+                        "uuid": "55a1dfa6-af52-4954-b9ea-96d52eaf7466"
+                    },
+                    "height": {
+                        "height": {
+                            "value": 80,
+                            "unit": "%",
+                            "uuid": "b8aa38f4-819a-4c29-adc4-faf45c092200"
+                        },
+                        "uuid": "71f17f4e-51b3-43f3-87e4-9f82c8ada5a8"
+                    },
+                    "labelPosition": "bottom",
+                    "minuteMarkColor": "rgba(255, 255, 255, 0.75)",
+                    "hourMarkColor": "rgba(168, 255, 196, 1)",
+                    "hourHandColor": "#ffffff",
+                    "minuteHandColor": "#ffffff",
+                    "secondHandColor": "#ff3b30",
+                    "useAmPm": true,
+                    "showSeconds": false,
+                    "showDate": true,
+                    "showTime": true,
+                    "datePosition": "top",
+                    "boxShadow": {
+                        "isEnabled": false,
+                        "xOffset": 0,
+                        "yOffset": 20,
+                        "color": "rgba(0,0,0,0.14)",
+                        "blur": 32,
+                        "spread": 0,
+                        "inset": false,
+                        "uuid": "a7b46f28-9d12-482a-a71a-d5a8926d3d5b"
+                    },
+                    "boxReflect": {
+                        "position": "bottom",
+                        "offset": 10,
+                        "startOpacity": 14,
+                        "endOpacity": 0,
+                        "uuid": "9cbb677e-dbc5-4d16-a8e8-e370bf320b25"
+                    },
+                    "dateFontSize": {
+                        "value": 28,
+                        "unit": "px",
+                        "uuid": "a8f5709d-2393-4e3a-88d8-9e8bf17a15a5"
+                    },
+                    "fontSize": {
+                        "value": 68,
+                        "unit": "px"
+                    },
+                    "text": "",
+                    "dateColor": "rgba(59,67,255,1.00)",
+                    "textColor": "rgba(59,67,255,1.00)",
+                    "fontFamily": "audiowide_regular_d0232764ae",
+                    "locale": "en-US",
+                    "timeZone": "America/New_York"
+                },
+                {
+                    "uuid": "f02e16bd-d26a-4000-8883-0bb0909750b0",
+                    "type": "dateTime",
+                    "name": "Date_Time_2",
+                    "cssClass": "dateTimeElement",
+                    "variant": "analog",
+                    "width": {
+                        "width": {
+                            "value": 80,
+                            "unit": "%",
+                            "uuid": "d5526ecd-e653-4b4f-929d-d49d98b4d16e"
+                        },
+                        "uuid": "d32999ca-8d50-4645-8752-022342739abd"
+                    },
+                    "height": {
+                        "height": {
+                            "value": 80,
+                            "unit": "%",
+                            "uuid": "4c13cd4a-0a07-4e86-9480-4fa320ecfbcd"
+                        },
+                        "uuid": "43712b16-1f9f-4664-a109-5a5d4ed964a1"
+                    },
+                    "labelPosition": "bottom",
+                    "minuteMarkColor": "black",
+                    "hourMarkColor": "black",
+                    "hourHandColor": "black",
+                    "minuteHandColor": "black",
+                    "secondHandColor": "#ff3b30",
+                    "useAmPm": false,
+                    "showSeconds": true,
+                    "showDate": true,
+                    "showTime": true,
+                    "datePosition": "bottom",
+                    "boxShadow": {
+                        "color": "black",
+                        "blur": 50,
+                        "uuid": "7d3cd8f1-9259-4c78-9f06-9182295b5d91"
+                    },
+                    "boxReflect": {
+                        "position": "bottom",
+                        "offset": 1,
+                        "startOpacity": 80,
+                        "endOpacity": 0,
+                        "uuid": "8d80c32f-ff66-4e52-b362-48e169547f6c"
+                    },
+                    "background": {
+                        "color": "",
+                        "uuid": "9ebd99db-731f-4d61-9382-97b2843ec3ab"
+                    }
+                }
+            ],
+            "cssClass": "container",
+            "paddingOptions": {
+                "padding": {
+                    "value": 15,
+                    "unit": "px",
+                    "uuid": "7148af67-dfe4-48d9-b90a-4bf38b0669ff"
+                },
+                "uuid": "d06bbdd5-beb1-4f33-98da-7c0940cbca03"
+            }
+        }
+    ],
+    "paddingOptions": {
+        "padding": {
+            "value": null,
+            "unit": "px",
+            "uuid": "24c818f3-7c6c-402d-a2f3-ea1cff11fe7a"
+        },
+        "uuid": "a354393a-5f02-4c5b-a8c7-00f0f544a1d9"
+    },
+    "background": {
+        "color": "rgba(232,232,232,1.00)",
+        "uuid": "a31fe788-92fe-46bd-a310-d70145f1072a"
+    },
+    "enableCustomPageSize": false
+}

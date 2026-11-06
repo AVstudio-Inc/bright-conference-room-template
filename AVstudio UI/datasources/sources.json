@@ -1,0 +1,44 @@
+[
+    {
+        "id": "pc",
+        "label": "PC",
+        "icon": "FaDesktop",
+        "joinValue": 1
+    },
+    {
+        "id": "laptop",
+        "label": "Laptop",
+        "icon": "FaLaptop",
+        "joinValue": 2
+    },
+    {
+        "id": "mobile",
+        "label": "Mobile",
+        "icon": "FaMobileAlt",
+        "joinValue": 3
+    },
+    {
+        "id": "playstation",
+        "label": "Play Station",
+        "icon": "FaPlaystation",
+        "joinValue": 4
+    },
+    {
+        "id": "computer",
+        "label": "Computer",
+        "icon": "FaDesktop",
+        "joinValue": 5
+    },
+    {
+        "id": "gamepad",
+        "label": "Gamepad",
+        "icon": "FaGamepad",
+        "joinValue": 6
+    },
+    {
+        "id": "chromecast",
+        "label": "Chromecast",
+        "icon": "FaChromecast",
+        "joinValue": 7
+    }
+]

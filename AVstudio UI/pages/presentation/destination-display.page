@@ -1,0 +1,257 @@
+{
+    "uuid": "0c6c0037-6474-4246-a149-479c0f794dbd",
+    "name": "destination-display",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "gap": {
+        "value": 0,
+        "unit": "px"
+    },
+    "background": {
+        "color": "transparent"
+    },
+    "parameters": {
+        "title": {
+            "type": "string",
+            "defaultValue": "Destination",
+            "currentValue": "Destination"
+        },
+        "sourceLabel": {
+            "type": "string",
+            "defaultValue": "No source",
+            "currentValue": "No source"
+        },
+        "sourceIcon": {
+            "type": "string",
+            "defaultValue": "FaDesktop",
+            "currentValue": "FaDesktop"
+        },
+        "selectionVariable": {
+            "type": "string",
+            "defaultValue": "destinationASelected",
+            "currentValue": "destinationASelected"
+        },
+        "selected": {
+            "type": "boolean",
+            "defaultValue": false,
+            "currentValue": false
+        },
+        "selectionJoin": {
+            "type": "string",
+            "defaultValue": "101",
+            "currentValue": "101"
+        }
+    },
+    "containers": [
+        {
+            "uuid": "26a5ac37-56ab-43c2-9dc0-224170eac2ed",
+            "name": "Display label",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "center",
+            "size": {
+                "value": 28,
+                "unit": "px",
+                "manualMode": true
+            },
+            "paddingOptions": {
+                "paddingLeft": {
+                    "value": 10,
+                    "unit": "px"
+                },
+                "paddingRight": {
+                    "value": 10,
+                    "unit": "px"
+                }
+            },
+            "scrollMode": "disabled",
+            "elements": [
+                {
+                    "uuid": "0dbd6988-2c40-4d2b-8fb7-338d8a70fb51",
+                    "type": "text",
+                    "name": "Display name",
+                    "cssClass": "text",
+                    "text": "<p style=\"text-align: left;\">%title%</p>",
+                    "textColor": "#646b73",
+                    "textFontSize": {
+                        "value": 13,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "actions": [
+                        {
+                            "uuid": "448312e2-e988-4df9-8a54-324dd92cc84b",
+                            "name": "Select display",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "%selectionVariable%",
+                            "value": "true"
+                        },
+                        {
+                            "uuid": "ecff923e-7f82-4122-b287-f1c4fe34423f",
+                            "name": "Publish display selection",
+                            "type": "d",
+                            "behaviour": "onClick",
+                            "signalName_signal": "%selectionJoin%",
+                            "digitalPushData": "true"
+                        }
+                    ],
+                    "activeModeIndex": "%selected%",
+                    "modes": [
+                        {
+                            "name": "Selected",
+                            "isModeHasOwnActions": true,
+                            "modeProps": {
+                                "iconColor": "#1478ff",
+                                "textColor": "#1478ff",
+                                "actions": [
+                                    {
+                                        "uuid": "a57ae79c-8227-4b69-a293-0e15836bb745",
+                                        "name": "Deselect display",
+                                        "behaviour": "onClick",
+                                        "type": "v",
+                                        "attachedVariableName": "%selectionVariable%",
+                                        "value": "false"
+                                    },
+                                    {
+                                        "uuid": "e0af5807-e7a3-457e-8168-74e1b8035d33",
+                                        "name": "Publish display selection",
+                                        "type": "d",
+                                        "behaviour": "onClick",
+                                        "signalName_signal": "%selectionJoin%",
+                                        "digitalPushData": "false"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "uuid": "cfd34b5a-7bc2-4d5e-bb08-c1850e6595ca",
+            "name": "Display content",
+            "cssClass": "container",
+            "flow": "column",
+            "align": "stretch",
+            "distribution": "center",
+            "allowWrap": true,
+            "scrollMode": "disabled",
+            "elements": [
+                {
+                    "uuid": "e8555ce6-face-4aaf-910a-c94ae5a971cc",
+                    "type": "button",
+                    "name": "Display source",
+                    "cssClass": "button",
+                    "text": "<p style=\"margin: 0;\">%sourceLabel%</p>",
+                    "iconName": "%sourceIcon%",
+                    "iconPosition": "top",
+                    "iconSize": {
+                        "value": 66,
+                        "unit": "px"
+                    },
+                    "iconColor": "#646b73",
+                    "textColor": "#646b73",
+                    "textFontSize": {
+                        "value": 15,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        },
+                        "minHeight": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "border": {
+                        "useBorder": false
+                    },
+                    "activeModeIndex": "%selected%",
+                    "actions": [
+                        {
+                            "uuid": "50f8dec9-50d1-4806-8fab-842de0aed436",
+                            "name": "Select display",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "%selectionVariable%",
+                            "value": "true"
+                        },
+                        {
+                            "uuid": "cd261791-bd71-4264-9bc7-761ac6bf02bc",
+                            "name": "Publish display selection",
+                            "type": "d",
+                            "behaviour": "onClick",
+                            "signalName_signal": "%selectionJoin%",
+                            "digitalPushData": "true"
+                        }
+                    ],
+                    "modes": [
+                        {
+                            "name": "Selected",
+                            "isModeHasOwnActions": true,
+                            "modeProps": {
+                                "iconColor": "#1478ff",
+                                "textColor": "#1478ff",
+                                "actions": [
+                                    {
+                                        "uuid": "50118029-e4a1-48b6-b3b7-5b0f849957a8",
+                                        "name": "Deselect display",
+                                        "behaviour": "onClick",
+                                        "type": "v",
+                                        "attachedVariableName": "%selectionVariable%",
+                                        "value": "false"
+                                    },
+                                    {
+                                        "uuid": "f832713a-d3bd-4390-b667-89be6620eedb",
+                                        "name": "Publish display selection",
+                                        "type": "d",
+                                        "behaviour": "onClick",
+                                        "signalName_signal": "%selectionJoin%",
+                                        "digitalPushData": "false"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px"
+                        }
+                    },
+                    "gap": {
+                        "value": 4,
+                        "unit": "px"
+                    }
+                }
+            ]
+        }
+    ]
+}

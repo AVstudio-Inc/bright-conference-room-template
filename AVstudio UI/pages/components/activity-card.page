@@ -1,0 +1,204 @@
+{
+    "uuid": "a1d78041-f005-4837-a342-c5cbecd762e4",
+    "name": "activity",
+    "layout": "responsive",
+    "flow": "column",
+    "cssClass": "page",
+    "containers": [
+        {
+            "uuid": "44e3cc9f-36d2-4217-81c7-5e5c705fae1b",
+            "name": "Label Container",
+            "elements": [
+                {
+                    "uuid": "bdb90faa-833b-4e89-bc33-a085b873345a",
+                    "type": "text",
+                    "name": "Text_1",
+                    "cssClass": "text",
+                    "text": "<p style=\"text-align: center;\">%label%</p>",
+                    "boxShadow": {
+                        "color": "black",
+                        "blur": 50
+                    },
+                    "boxReflect": {
+                        "position": "bottom",
+                        "offset": 1,
+                        "startOpacity": 80,
+                        "endOpacity": 0
+                    },
+                    "width": {
+                        "width": {
+                            "value": 80,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 70,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "rgba(255, 255, 255, 0.90)"
+                    },
+                    "textColor": "black",
+                    "border": {
+                        "useBorder": true,
+                        "borderRadius": 10
+                    },
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 10,
+                            "unit": "px"
+                        }
+                    }
+                }
+            ],
+            "cssClass": "container",
+            "flow": "column",
+            "align": "flex-start",
+            "distribution": "flex-start",
+            "size": {
+                "value": 100,
+                "unit": "%"
+            },
+            "paddingOptions": {
+                "paddingTop": {
+                    "unit": "px"
+                },
+                "paddingLeft": {
+                    "unit": "px"
+                }
+            },
+            "border": {
+                "useBorder": true
+            }
+        },
+        {
+            "uuid": "adacc294-86fa-4990-abda-175e57660def",
+            "name": "Description Container",
+            "elements": [
+                {
+                    "uuid": "984357b6-cdd4-4cfa-b5d6-8c66af4ec560",
+                    "type": "text",
+                    "name": "Text_2",
+                    "cssClass": "text",
+                    "text": "<p style=\"text-align: center;\">%description%</p>",
+                    "boxShadow": {
+                        "color": "black",
+                        "blur": 50
+                    },
+                    "boxReflect": {
+                        "position": "bottom",
+                        "offset": 1,
+                        "startOpacity": 80,
+                        "endOpacity": 0
+                    },
+                    "width": {
+                        "width": {
+                            "value": 80,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 70,
+                            "unit": "px"
+                        }
+                    },
+                    "background": {
+                        "color": "rgba(255, 255, 255, 0.90)"
+                    },
+                    "textColor": "black",
+                    "border": {
+                        "useBorder": true,
+                        "borderTopLeftRadius": 10,
+                        "borderBottomLeftRadius": 10
+                    },
+                    "paddingOptions": {
+                        "paddingRight": {
+                            "unit": "px"
+                        }
+                    }
+                }
+            ],
+            "cssClass": "container",
+            "flow": "column",
+            "align": "flex-end",
+            "distribution": "flex-end",
+            "size": {
+                "value": 100,
+                "unit": "%"
+            },
+            "paddingOptions": {
+                "paddingBottom": {
+                    "unit": "px"
+                },
+                "padding": {
+                    "unit": "px"
+                }
+            },
+            "background": {
+                "color": ""
+            }
+        }
+    ],
+    "parameters": {
+        "label": {
+            "type": "string",
+            "defaultValue": "Label"
+        },
+        "description": {
+            "type": "string",
+            "defaultValue": "Description"
+        },
+        "imagePath": {
+            "type": "string",
+            "defaultValue": ""
+        }
+    },
+    "background": {
+        "customBackgroundImage": true,
+        "imgPath": "%imagePath%",
+        "fillType": "cover",
+        "fillAlignX": "center",
+        "fillAlignY": "center",
+        "customBackgroundImageblur": 0,
+        "customBackgroundImageOpacity": 100,
+        "backgroundElementsBlur": null,
+        "color": ""
+    },
+    "border": {
+        "useBorder": true,
+        "borderRadius": 30,
+        "borderWidth": null,
+        "borderColor": "",
+        "borderStyle": "solid",
+        "borderTopLeftRadius": null
+    },
+    "paddingOptions": {
+        "paddingBottom": {
+            "value": null,
+            "unit": "px"
+        },
+        "padding": {
+            "value": 16,
+            "unit": "px"
+        },
+        "paddingRight": {
+            "value": 0,
+            "unit": "px"
+        }
+    },
+    "width": {
+        "width": {
+            "value": 50,
+            "unit": "%"
+        }
+    },
+    "height": {
+        "height": {
+            "value": 50,
+            "unit": "%"
+        }
+    }
+}

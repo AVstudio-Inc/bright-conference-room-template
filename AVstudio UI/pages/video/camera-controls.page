@@ -1,0 +1,307 @@
+{
+    "uuid": "abce14af-b8ad-4921-99dd-fea221f77a54",
+    "name": "camera-controls",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "gap": {
+        "value": 0,
+        "unit": "px"
+    },
+    "background": {
+        "color": "transparent"
+    },
+    "containers": [
+        {
+            "uuid": "0ae6c2ab-770f-4742-8835-49017507226d",
+            "name": "Camera Controls",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "center",
+            "elements": [
+                {
+                    "uuid": "920d68f1-b389-4440-a416-126967123aa0",
+                    "type": "subpage",
+                    "name": "Camera List Subpage",
+                    "cssClass": "subpage",
+                    "subpageName": "./camera-list.page",
+                    "width": {
+                        "width": {
+                            "value": 25,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    }
+                },
+                {
+                    "uuid": "cb1b6243-884d-4894-8d93-724287401b79",
+                    "type": "button",
+                    "name": "Zoom Out",
+                    "cssClass": "button",
+                    "text": "",
+                    "iconName": "FaSearchMinus",
+                    "iconSize": {
+                        "value": 42,
+                        "unit": "px"
+                    },
+                    "iconColor": "#9b9b9b",
+                    "width": {
+                        "width": {
+                            "value": 9,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 22,
+                            "unit": "%"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "actions": [
+                        {
+                            "uuid": "ef0c4bd9-43ef-4c16-9109-4b879a7cff91",
+                            "name": "Crestron Zoom Out",
+                            "type": "d",
+                            "behaviour": "onPress",
+                            "signalName_signal": "56",
+                            "digitalPushData": "momentarily"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "6e279365-2721-49cb-8e2f-ebf84fb4e9a5",
+                    "type": "dpad",
+                    "name": "Camera Direction",
+                    "cssClass": "dpadElement",
+                    "color": "#3f55ff",
+                    "pressedColor": "#1478ff",
+                    "cornersRadius": 20,
+                    "thickness": 1,
+                    "hideCentralButton": false,
+                    "topText": "",
+                    "rightText": "",
+                    "bottomText": "",
+                    "leftText": "",
+                    "centerText": "",
+                    "topButton_signal_d": "",
+                    "rightButton_signal_d": "",
+                    "bottomButton_signal_d": "",
+                    "leftButton_signal_d": "",
+                    "centerButton_signal_d": "",
+                    "width": {
+                        "width": {
+                            "value": 25,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 58,
+                            "unit": "%"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "actions": [
+                        {
+                            "uuid": "a2660aa1-b874-46ef-8899-51d59f644582",
+                            "name": "Crestron camera PTZ",
+                            "type": "joinMap",
+                            "behaviour": "onPress",
+                            "buttonJoins": {
+                                "left": "51",
+                                "right": "52",
+                                "top": "53",
+                                "bottom": "54",
+                                "center": "55"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "uuid": "149948dd-541c-449b-a7ec-de56c22c65d6",
+                    "type": "button",
+                    "name": "Zoom In",
+                    "cssClass": "button",
+                    "text": "",
+                    "iconName": "FaSearchPlus",
+                    "iconSize": {
+                        "value": 42,
+                        "unit": "px"
+                    },
+                    "iconColor": "#9b9b9b",
+                    "width": {
+                        "width": {
+                            "value": 9,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 22,
+                            "unit": "%"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "actions": [
+                        {
+                            "uuid": "1d3e2e72-8440-4086-b573-d9c0eeb648fa",
+                            "name": "Crestron Zoom In",
+                            "type": "d",
+                            "behaviour": "onPress",
+                            "signalName_signal": "57",
+                            "digitalPushData": "momentarily"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "6b82e20c-56df-4248-8e82-72808009beb8",
+                    "type": "subpage",
+                    "name": "Camera Presets Subpage",
+                    "cssClass": "subpage",
+                    "subpageName": "./camera-presets.page",
+                    "width": {
+                        "width": {
+                            "value": 25,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    }
+                }
+            ],
+            "distribution": "space-between",
+            "gap": {
+                "value": 0,
+                "unit": "px"
+            }
+        },
+        {
+            "uuid": "83c29433-43f7-40bf-ae37-e28dd9ac5ddc",
+            "name": "Content Source Heading",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "center",
+            "distribution": "center",
+            "size": {
+                "value": 40,
+                "unit": "px",
+                "manualMode": true
+            },
+            "elements": [
+                {
+                    "uuid": "2e5268b3-4fc0-460b-a084-449196f9e5d3",
+                    "type": "text",
+                    "name": "Source Heading",
+                    "cssClass": "text",
+                    "text": "<p style=\"text-align: center;\">SOURCE FOR CONTENT</p>",
+                    "textColor": "#9b9b9b",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 40,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 100,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 80,
+                            "unit": "%"
+                        }
+                    },
+                    "style": {
+                        "textAlign": "center",
+                        "display": "flex",
+                        "alignItems": "center",
+                        "justifyContent": "center"
+                    }
+                }
+            ]
+        },
+        {
+            "uuid": "faee27a2-04ad-4c1c-8bf0-3eeedc91f72b",
+            "name": "Content Sources",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "center",
+            "distribution": "space-around",
+            "size": {
+                "value": 25,
+                "unit": "%",
+                "manualMode": true
+            },
+            "elements": [
+                {
+                    "uuid": "69a1dbb8-3cc3-43a5-97dc-a2fde0489b14",
+                    "type": "subpageList",
+                    "name": "Sources",
+                    "cssClass": "subpageList",
+                    "subpageName": "pages/components/source-card.page",
+                    "variant": "grid",
+                    "rows": 1,
+                    "columns": 7,
+                    "gridFlow": "row",
+                    "scrollMode": "scroll",
+                    "gap": {
+                        "value": 12,
+                        "unit": "px"
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "attachedDatasource": {
+                        "datasource": "datasources/sources.datasource",
+                        "steps": []
+                    },
+                    "listKey": "#datasources/sources.datasource:*.id#",
+                    "activeSelectedListKey": "$conferenceSource$",
+                    "inputParameters": {
+                        "label": "#datasources/sources.datasource:*.label#",
+                        "icon": "#datasources/sources.datasource:*.icon#",
+                        "selectionVariable": "conferenceSource",
+                        "iconPixels": 58,
+                        "textPixels": 16,
+                        "cardWidth": 91,
+                        "cardHeight": 90,
+                        "sourceJoin": "120",
+                        "sourceValue": "#datasources/sources.datasource:*.joinValue#"
+                    }
+                }
+            ]
+        }
+    ]
+}

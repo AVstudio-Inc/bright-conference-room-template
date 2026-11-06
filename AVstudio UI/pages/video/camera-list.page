@@ -1,0 +1,324 @@
+{
+    "uuid": "497ac6fa-c018-4251-b303-a7b4bdf74fbe",
+    "name": "camera-list",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "background": {
+        "color": "transparent"
+    },
+    "containers": [
+        {
+            "uuid": "39b46ddb-c529-4b5b-9666-5e669dd7e9e1",
+            "name": "Cameras",
+            "cssClass": "container",
+            "flow": "column",
+            "align": "stretch",
+            "distribution": "flex-start",
+            "gap": {
+                "value": 3,
+                "unit": "%"
+            },
+            "size": {
+                "value": 100,
+                "unit": "%"
+            },
+            "paddingOptions": {
+                "paddingLeft": {
+                    "value": 12,
+                    "unit": "%"
+                },
+                "paddingTop": {
+                    "value": 6,
+                    "unit": "%"
+                }
+            },
+            "elements": [
+                {
+                    "uuid": "cc9b849e-3767-4c46-a7f2-70e239333ebd",
+                    "type": "button",
+                    "name": "Camera 1",
+                    "cssClass": "button",
+                    "text": "<p>Camera_1</p>",
+                    "textColor": "#9b9b9b",
+                    "textFontSize": {
+                        "value": 18,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 70,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 12,
+                            "unit": "%"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "activeModeIndex": "$currentCamera$",
+                    "modes": [
+                        {
+                            "name": "Camera_1",
+                            "isModeHasOwnActions": false,
+                            "modeProps": {
+                                "textColor": "#1478ff",
+                                "border": {
+                                    "useBorder": true,
+                                    "borderWidth": 0,
+                                    "borderBottomWidth": 3,
+                                    "borderColor": "#1478ff",
+                                    "borderStyle": "solid",
+                                    "borderBottomRightRadius": 14
+                                }
+                            }
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "233b3693-aa68-4745-adac-55cd14cd8d28",
+                            "name": "Select camera",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "currentCamera",
+                            "value": "Camera_1"
+                        },
+                        {
+                            "uuid": "cc191316-9fc7-4e8a-a5cc-dfe3cfaf63ef",
+                            "name": "Reset camera preset",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "currentCameraPreset",
+                            "value": "0"
+                        },
+                        {
+                            "uuid": "64356316-3d0b-4368-a753-eeb714715cc6",
+                            "name": "Crestron Camera 1",
+                            "type": "a",
+                            "behaviour": "onClick",
+                            "signalName_signal": "151",
+                            "value": "1"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "89e52bf6-a68a-43ca-9eec-26d706177f3c",
+                    "type": "button",
+                    "name": "Camera 2",
+                    "cssClass": "button",
+                    "text": "<p>Camera_2</p>",
+                    "textColor": "#9b9b9b",
+                    "textFontSize": {
+                        "value": 18,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 70,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 12,
+                            "unit": "%"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "activeModeIndex": "$currentCamera$",
+                    "modes": [
+                        {
+                            "name": "Camera_2",
+                            "isModeHasOwnActions": false,
+                            "modeProps": {
+                                "textColor": "#1478ff",
+                                "border": {
+                                    "useBorder": true,
+                                    "borderWidth": 0,
+                                    "borderBottomWidth": 3,
+                                    "borderColor": "#1478ff",
+                                    "borderStyle": "solid",
+                                    "borderBottomRightRadius": 14
+                                }
+                            }
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "3108e479-b8d3-44db-b196-2935f0d7a98a",
+                            "name": "Select camera",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "currentCamera",
+                            "value": "Camera_2"
+                        },
+                        {
+                            "uuid": "8960624a-0e36-4da9-95ed-2b1812fd7d06",
+                            "name": "Reset camera preset",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "currentCameraPreset",
+                            "value": "0"
+                        },
+                        {
+                            "uuid": "43dce9d8-20a2-42f2-afdc-1ec636757690",
+                            "name": "Crestron Camera 2",
+                            "type": "a",
+                            "behaviour": "onClick",
+                            "signalName_signal": "151",
+                            "value": "2"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "33e483aa-fbd3-48a1-b93c-9dde8e668c26",
+                    "type": "button",
+                    "name": "Camera 3",
+                    "cssClass": "button",
+                    "text": "<p>Camera_3</p>",
+                    "textColor": "#9b9b9b",
+                    "textFontSize": {
+                        "value": 18,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 70,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 12,
+                            "unit": "%"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "activeModeIndex": "$currentCamera$",
+                    "modes": [
+                        {
+                            "name": "Camera_3",
+                            "isModeHasOwnActions": false,
+                            "modeProps": {
+                                "textColor": "#1478ff",
+                                "border": {
+                                    "useBorder": true,
+                                    "borderWidth": 0,
+                                    "borderBottomWidth": 3,
+                                    "borderColor": "#1478ff",
+                                    "borderStyle": "solid",
+                                    "borderBottomRightRadius": 14
+                                }
+                            }
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "d087578f-361b-4c6f-8afa-41e0c8ae36a3",
+                            "name": "Select camera",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "currentCamera",
+                            "value": "Camera_3"
+                        },
+                        {
+                            "uuid": "dfda08b1-8377-44e9-a05d-4d6172eb321d",
+                            "name": "Reset camera preset",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "currentCameraPreset",
+                            "value": "0"
+                        },
+                        {
+                            "uuid": "ca7a06d2-ab50-4921-81bf-c918039c28ea",
+                            "name": "Crestron Camera 3",
+                            "type": "a",
+                            "behaviour": "onClick",
+                            "signalName_signal": "151",
+                            "value": "3"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "7e2e3358-586a-4948-9ed0-cf3b7f9bb860",
+                    "type": "button",
+                    "name": "Camera 4",
+                    "cssClass": "button",
+                    "text": "<p>Camera_4</p>",
+                    "textColor": "#9b9b9b",
+                    "textFontSize": {
+                        "value": 18,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 70,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 12,
+                            "unit": "%"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent"
+                    },
+                    "activeModeIndex": "$currentCamera$",
+                    "modes": [
+                        {
+                            "name": "Camera_4",
+                            "isModeHasOwnActions": false,
+                            "modeProps": {
+                                "textColor": "#1478ff",
+                                "border": {
+                                    "useBorder": true,
+                                    "borderWidth": 0,
+                                    "borderBottomWidth": 3,
+                                    "borderColor": "#1478ff",
+                                    "borderStyle": "solid",
+                                    "borderBottomRightRadius": 14
+                                }
+                            }
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "0b106fb6-46d6-4238-bfb3-f55271b525dc",
+                            "name": "Select camera",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "currentCamera",
+                            "value": "Camera_4"
+                        },
+                        {
+                            "uuid": "9b4cabb1-3d91-4a8d-9738-4a16a54c2ab0",
+                            "name": "Reset camera preset",
+                            "behaviour": "onClick",
+                            "type": "v",
+                            "attachedVariableName": "currentCameraPreset",
+                            "value": "0"
+                        },
+                        {
+                            "uuid": "f3e4386e-b647-47ea-8299-e8d9d6e009fd",
+                            "name": "Crestron Camera 4",
+                            "type": "a",
+                            "behaviour": "onClick",
+                            "signalName_signal": "151",
+                            "value": "4"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

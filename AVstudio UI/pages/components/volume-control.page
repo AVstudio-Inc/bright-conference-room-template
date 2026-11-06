@@ -1,0 +1,228 @@
+{
+    "uuid": "11da0533-70b7-4a9f-965c-d9289eed7a25",
+    "name": "volume-control",
+    "layout": "responsive",
+    "cssClass": "page",
+    "containers": [
+        {
+            "uuid": "db01935d-e50c-4d67-9af0-e11174877de0",
+            "name": "Volume controls",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "center",
+            "distribution": "space-between",
+            "background": {
+                "color": "rgba(255,255,255,1.00)",
+                "uuid": "52485e79-9bce-41b8-b223-1d20ce414563"
+            },
+            "border": {
+                "useBorder": true,
+                "borderWidth": 0,
+                "borderRadius": 14,
+                "borderColor": "transparent",
+                "borderStyle": "solid",
+                "uuid": "49c4b192-fdbd-4f73-a57a-b404ce36f0e3"
+            },
+            "elements": [
+                {
+                    "uuid": "6194286d-7f21-41be-944a-b7e9b418fe81",
+                    "type": "button",
+                    "name": "Volume down",
+                    "cssClass": "button",
+                    "text": "",
+                    "iconName": "FaVolumeDown",
+                    "iconSize": {
+                        "value": 20,
+                        "unit": "px",
+                        "uuid": "6a3b5ae4-91da-4a92-aa52-8ba9f42574e9"
+                    },
+                    "iconColor": "#4d4d4d",
+                    "width": {
+                        "width": {
+                            "value": 25,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 92,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent",
+                        "uuid": "8395392f-aef1-419b-b805-1e0dcb372d0b"
+                    },
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px",
+                            "uuid": "9c558236-8fa7-437e-80f6-445d4ea43826"
+                        },
+                        "uuid": "02ed4be6-cd4a-4650-b8d6-2c11a55e7306"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderWidth": 0,
+                        "borderRadius": 0,
+                        "borderColor": "transparent",
+                        "borderStyle": "solid",
+                        "uuid": "6b096c26-d115-4055-890d-e4e4e6b2ecc1"
+                    },
+                    "actions": [
+                        {
+                            "name": "Volume down (Crestron hold)",
+                            "behaviour": "onPress",
+                            "signalName_signal": "302",
+                            "digitalPushData": "momentarily",
+                            "type": "d",
+                            "uuid": "0b99d464-0ee8-429d-a5f6-22b26daed78f"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "40e79744-3b83-4b88-991c-f188fae41b6e",
+                    "type": "text",
+                    "name": "Volume level",
+                    "cssClass": "text",
+                    "text": "<p style=\"text-align: center;\"><strong>%volumeValue% %</strong></p>",
+                    "textColor": "#4d4d4d",
+                    "textFontSize": {
+                        "value": 28,
+                        "unit": "px",
+                        "uuid": "d148dd7f-ce8f-49e5-8c17-ed10016cbd73"
+                    },
+                    "style": {
+                        "textAlign": "center",
+                        "display": "flex",
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                        "uuid": "b6f93787-9478-4ada-83f0-114b9f6c7f9d"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 50,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent",
+                        "uuid": "2c0db726-fb85-42f9-894f-09f476c8ec1c"
+                    },
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px",
+                            "uuid": "8510b2cd-d27d-456d-9301-331c03a55825"
+                        },
+                        "uuid": "688dd639-0fc2-488f-9c24-039d15d4ea6e"
+                    }
+                },
+                {
+                    "uuid": "d35a213a-01ea-4b91-a903-829f688f37b5",
+                    "type": "button",
+                    "name": "Volume up",
+                    "cssClass": "button",
+                    "text": "",
+                    "iconName": "FaVolumeUp",
+                    "iconSize": {
+                        "value": 21,
+                        "unit": "px",
+                        "uuid": "76274154-689a-404e-b960-0d108c936734"
+                    },
+                    "iconColor": "#4d4d4d",
+                    "width": {
+                        "width": {
+                            "value": 25,
+                            "unit": "%"
+                        },
+                        "minWidth": {
+                            "value": 92,
+                            "unit": "px"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "background": {
+                        "color": "transparent",
+                        "uuid": "d68aa84b-95ee-4b7d-83dc-0931958267c8"
+                    },
+                    "paddingOptions": {
+                        "padding": {
+                            "value": 0,
+                            "unit": "px",
+                            "uuid": "474e222c-3e91-4b90-9b73-c5d0d157e8e8"
+                        },
+                        "uuid": "7a0ce0bc-834d-45b4-af90-9a0cf25e6abb"
+                    },
+                    "border": {
+                        "useBorder": true,
+                        "borderWidth": 0,
+                        "borderRadius": 0,
+                        "borderColor": "transparent",
+                        "borderStyle": "solid",
+                        "uuid": "0018c5b4-0eb1-4589-adac-cc1c58ad2e70"
+                    },
+                    "actions": [
+                        {
+                            "name": "Volume up (Crestron hold)",
+                            "behaviour": "onPress",
+                            "signalName_signal": "301",
+                            "digitalPushData": "momentarily",
+                            "type": "d",
+                            "uuid": "67d42135-7c6d-4848-87f7-1371999a2f40"
+                        }
+                    ]
+                }
+            ],
+            "scrollMode": "disabled",
+            "gap": {
+                "value": 0,
+                "unit": "px"
+            }
+        }
+    ],
+    "parameters": {
+        "volumeValue": {
+            "type": "number",
+            "defaultValue": 0,
+            "currentValue": 0
+        }
+    },
+    "background": {
+        "color": "rgba(255,255,255,1.00)",
+        "uuid": "096c0cd0-d733-4f61-afef-96bd3f5e8c2a"
+    },
+    "enableCustomPageSize": false,
+    "width": {
+        "width": {
+            "value": 240,
+            "unit": "px",
+            "uuid": "382795ba-9b62-49e5-ba98-531711c06861"
+        },
+        "uuid": "04b94756-5048-412b-97d6-558f4878c4c1"
+    },
+    "height": {
+        "height": {
+            "value": 64,
+            "unit": "px",
+            "uuid": "3df52a0d-7523-4537-96c2-e8c4d7bd5d02"
+        },
+        "uuid": "f7e8f52f-daf9-407e-838a-4661122c1ff3"
+    },
+    "flow": "column"
+}

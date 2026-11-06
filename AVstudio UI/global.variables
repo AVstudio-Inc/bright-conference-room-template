@@ -1,0 +1,348 @@
+{
+    "volumeMute": {
+        "type": "boolean",
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "301",
+            "signalType": "boolean"
+        }
+    },
+    "microphoneMute": {
+        "type": "boolean",
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "304",
+            "signalType": "boolean"
+        }
+    },
+    "volumeLevel": {
+        "type": "number",
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "301",
+            "signalType": "number"
+        }
+    },
+    "destinationASelected": {
+        "type": "boolean",
+        "defaultValue": true,
+        "currentValue": true,
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "101",
+            "signalType": "boolean"
+        }
+    },
+    "destinationBSelected": {
+        "type": "boolean",
+        "defaultValue": false,
+        "currentValue": false,
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "102",
+            "signalType": "boolean"
+        }
+    },
+    "destinationCSelected": {
+        "type": "boolean",
+        "defaultValue": true,
+        "currentValue": true,
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "103",
+            "signalType": "boolean"
+        }
+    },
+    "presentationSource": {
+        "type": "string",
+        "defaultValue": "",
+        "currentValue": ""
+    },
+    "conferenceSource": {
+        "type": "string",
+        "defaultValue": "",
+        "currentValue": ""
+    },
+    "currentCamera": {
+        "type": "string",
+        "defaultValue": "Camera_3",
+        "currentValue": "Camera_3"
+    },
+    "currentCameraPreset": {
+        "type": "string",
+        "defaultValue": "0",
+        "currentValue": "0"
+    },
+    "phoneNumber": {
+        "type": "string",
+        "defaultValue": "",
+        "currentValue": "",
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "201",
+            "signalType": "string"
+        }
+    },
+    "destinationPower": {
+        "type": "boolean",
+        "defaultValue": false,
+        "currentValue": false,
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "110",
+            "signalType": "boolean"
+        }
+    },
+    "destinationASource": {
+        "type": "string",
+        "defaultValue": "",
+        "currentValue": ""
+    },
+    "destinationASourceLabel": {
+        "type": "string",
+        "defaultValue": "No source",
+        "currentValue": "No source"
+    },
+    "destinationASourceIcon": {
+        "type": "string",
+        "defaultValue": "FaDesktop",
+        "currentValue": "FaDesktop"
+    },
+    "destinationBSource": {
+        "type": "string",
+        "defaultValue": "",
+        "currentValue": ""
+    },
+    "destinationBSourceLabel": {
+        "type": "string",
+        "defaultValue": "No source",
+        "currentValue": "No source"
+    },
+    "destinationBSourceIcon": {
+        "type": "string",
+        "defaultValue": "FaDesktop",
+        "currentValue": "FaDesktop"
+    },
+    "destinationCSource": {
+        "type": "string",
+        "defaultValue": "",
+        "currentValue": ""
+    },
+    "destinationCSourceLabel": {
+        "type": "string",
+        "defaultValue": "No source",
+        "currentValue": "No source"
+    },
+    "destinationCSourceIcon": {
+        "type": "string",
+        "defaultValue": "FaDesktop",
+        "currentValue": "FaDesktop"
+    },
+    "presentationSourceNumber": {
+        "type": "number",
+        "defaultValue": 0,
+        "currentValue": 0,
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "100",
+            "signalType": "number"
+        },
+        "actions": [
+            {
+                "uuid": "7bea8467-8ef8-4b79-87d5-ff29974dc8c4",
+                "name": "Apply Crestron feedback",
+                "type": "f",
+                "behaviour": "onChange",
+                "attachedFunctionToRun": "functions/crestron/syncFeedback.js",
+                "value": "presentationSourceNumber",
+                "onChangeActionUseCustomValue": true
+            }
+        ]
+    },
+    "destinationASourceNumber": {
+        "type": "number",
+        "defaultValue": 0,
+        "currentValue": 0,
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "111",
+            "signalType": "number"
+        },
+        "actions": [
+            {
+                "uuid": "ea790320-273a-496e-be41-fc04a90763e6",
+                "name": "Apply Crestron feedback",
+                "type": "f",
+                "behaviour": "onChange",
+                "attachedFunctionToRun": "functions/crestron/syncFeedback.js",
+                "value": "destinationASourceNumber",
+                "onChangeActionUseCustomValue": true
+            }
+        ]
+    },
+    "destinationBSourceNumber": {
+        "type": "number",
+        "defaultValue": 0,
+        "currentValue": 0,
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "112",
+            "signalType": "number"
+        },
+        "actions": [
+            {
+                "uuid": "14ed7573-ba61-490a-a642-be578a47589f",
+                "name": "Apply Crestron feedback",
+                "type": "f",
+                "behaviour": "onChange",
+                "attachedFunctionToRun": "functions/crestron/syncFeedback.js",
+                "value": "destinationBSourceNumber",
+                "onChangeActionUseCustomValue": true
+            }
+        ]
+    },
+    "destinationCSourceNumber": {
+        "type": "number",
+        "defaultValue": 0,
+        "currentValue": 0,
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "113",
+            "signalType": "number"
+        },
+        "actions": [
+            {
+                "uuid": "f50b209c-6a94-4e36-b847-b785f27f67fe",
+                "name": "Apply Crestron feedback",
+                "type": "f",
+                "behaviour": "onChange",
+                "attachedFunctionToRun": "functions/crestron/syncFeedback.js",
+                "value": "destinationCSourceNumber",
+                "onChangeActionUseCustomValue": true
+            }
+        ]
+    },
+    "conferenceSourceNumber": {
+        "type": "number",
+        "defaultValue": 0,
+        "currentValue": 0,
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "120",
+            "signalType": "number"
+        },
+        "actions": [
+            {
+                "uuid": "35181841-f823-4d13-b984-6faab9ffef12",
+                "name": "Apply Crestron feedback",
+                "type": "f",
+                "behaviour": "onChange",
+                "attachedFunctionToRun": "functions/crestron/syncFeedback.js",
+                "value": "conferenceSourceNumber",
+                "onChangeActionUseCustomValue": true
+            }
+        ]
+    },
+    "cameraNumber": {
+        "type": "number",
+        "defaultValue": 0,
+        "currentValue": 0,
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "151",
+            "signalType": "number"
+        },
+        "actions": [
+            {
+                "uuid": "74fc0359-811a-4339-9045-c1394ad7e694",
+                "name": "Apply Crestron feedback",
+                "type": "f",
+                "behaviour": "onChange",
+                "attachedFunctionToRun": "functions/crestron/syncFeedback.js",
+                "value": "cameraNumber",
+                "onChangeActionUseCustomValue": true
+            }
+        ]
+    },
+    "cameraPresetNumber": {
+        "type": "number",
+        "defaultValue": 0,
+        "currentValue": 0,
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "152",
+            "signalType": "number"
+        },
+        "actions": [
+            {
+                "uuid": "38afe9b7-877c-4e75-9ae0-90091d3d5969",
+                "name": "Apply Crestron feedback",
+                "type": "f",
+                "behaviour": "onChange",
+                "attachedFunctionToRun": "functions/crestron/syncFeedback.js",
+                "value": "cameraPresetNumber",
+                "onChangeActionUseCustomValue": true
+            }
+        ]
+    },
+    "callStatus": {
+        "type": "string",
+        "defaultValue": "idle",
+        "currentValue": "idle",
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "202",
+            "signalType": "string"
+        }
+    },
+    "systemPower": {
+        "type": "boolean",
+        "defaultValue": false,
+        "currentValue": false,
+        "externalBinding": {
+            "connectorName": "connectors/AVstudio LAB.crestron",
+            "kind": "crestron",
+            "signalName": "308",
+            "signalType": "boolean"
+        }
+    },
+    "shutdownSeconds": {
+        "type": "number",
+        "defaultValue": 10,
+        "currentValue": 10
+    },
+    "shutdownCloseRequest": {
+        "type": "number",
+        "defaultValue": 0,
+        "currentValue": 0,
+        "actions": [
+            {
+                "uuid": "467d1657-2d3f-4a5b-8cd3-df11d754076d",
+                "name": "Close shutdown overlay",
+                "type": "co",
+                "behaviour": "onChange"
+            }
+        ]
+    },
+    "roomDisplayName": {
+        "type": "string",
+        "defaultValue": "Bright Conference Room",
+        "currentValue": "Bright Conference Room"
+    }
+}

@@ -1,0 +1,183 @@
+{
+    "uuid": "c48ec633-778b-4222-8638-2e8587f322b4",
+    "name": "shutdown-confirmation",
+    "layout": "responsive",
+    "cssClass": "page",
+    "flow": "column",
+    "gap": {
+        "value": 16,
+        "unit": "px"
+    },
+    "enableCustomPageSize": true,
+    "width": {
+        "width": {
+            "value": 440,
+            "unit": "px"
+        }
+    },
+    "height": {
+        "height": {
+            "value": 280,
+            "unit": "px"
+        }
+    },
+    "background": {
+        "color": "#fafafa"
+    },
+    "border": {
+        "useBorder": true,
+        "borderRadius": 20,
+        "borderWidth": 0
+    },
+    "paddingOptions": {
+        "padding": {
+            "value": 24,
+            "unit": "px"
+        }
+    },
+    "containers": [
+        {
+            "uuid": "ff9ab560-149f-48dd-81fc-4a5979b1006e",
+            "name": "Shutdown message",
+            "cssClass": "container",
+            "flow": "column",
+            "align": "center",
+            "distribution": "center",
+            "allowWrap": true,
+            "scrollMode": "disabled",
+            "elements": [
+                {
+                    "uuid": "4b102cd2-7001-432a-a4ec-23320a034786",
+                    "type": "text",
+                    "name": "Shutdown confirmation",
+                    "cssClass": "text",
+                    "text": "<p style=\"text-align: center;\"><strong>End the room session?</strong></p><p style=\"text-align: center;\">Ending automatically in <strong>$shutdownSeconds$</strong> seconds.</p>",
+                    "textColor": "#4d4d4d",
+                    "textFontSize": {
+                        "value": 20,
+                        "unit": "px"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "uuid": "a5e6bb74-b8e3-4048-b84b-ecf5ef758f65",
+            "name": "Shutdown choices",
+            "cssClass": "container",
+            "flow": "row",
+            "align": "stretch",
+            "distribution": "space-between",
+            "size": {
+                "value": 56,
+                "unit": "px",
+                "manualMode": true
+            },
+            "gap": {
+                "value": 12,
+                "unit": "px"
+            },
+            "scrollMode": "disabled",
+            "elements": [
+                {
+                    "uuid": "90923a82-5928-41a4-8b92-b856c6723c9d",
+                    "name": "Cancel shutdown",
+                    "type": "button",
+                    "cssClass": "button",
+                    "text": "<p>Cancel</p>",
+                    "textColor": "#4d4d4d",
+                    "width": {
+                        "width": {
+                            "value": 46,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "actions": [
+                        {
+                            "uuid": "6e72f875-e63b-424f-a839-26d1be74b606",
+                            "name": "Cancel countdown",
+                            "type": "f",
+                            "behaviour": "onClick",
+                            "attachedFunctionToRun": "functions/system/shutdownCountdown.js",
+                            "value": "cancel"
+                        },
+                        {
+                            "uuid": "d0b18fd3-8399-4af0-91f4-e359eb9cd02b",
+                            "name": "Close confirmation",
+                            "type": "co",
+                            "behaviour": "onClick"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "865e4287-779c-47a6-9c55-40f876557853",
+                    "name": "Confirm shutdown",
+                    "type": "button",
+                    "cssClass": "button",
+                    "text": "<p>End session</p>",
+                    "textColor": "#ffffff",
+                    "background": {
+                        "color": "#dc001b"
+                    },
+                    "width": {
+                        "width": {
+                            "value": 46,
+                            "unit": "%"
+                        }
+                    },
+                    "height": {
+                        "height": {
+                            "value": 100,
+                            "unit": "%"
+                        }
+                    },
+                    "actions": [
+                        {
+                            "uuid": "6c164c09-8b1d-42c6-a36d-e788a5ecf926",
+                            "name": "End session now",
+                            "type": "f",
+                            "behaviour": "onClick",
+                            "attachedFunctionToRun": "functions/system/shutdownCountdown.js",
+                            "value": "finish"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "uuid": "f3450e06-a6a5-4669-b969-3e2f8f060beb",
+            "name": "Start shutdown countdown",
+            "type": "f",
+            "behaviour": "onLoad",
+            "attachedFunctionToRun": "functions/system/shutdownCountdown.js",
+            "value": "start"
+        },
+        {
+            "uuid": "4b34c415-9fc9-4416-baa7-74ea6a994302",
+            "name": "Cancel countdown on close",
+            "type": "f",
+            "behaviour": "onExit",
+            "attachedFunctionToRun": "functions/system/shutdownCountdown.js",
+            "value": "cancel"
+        }
+    ]
+}
